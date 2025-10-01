@@ -6,16 +6,16 @@ import { useState, useMemo } from "react";
 
 function getCurrentGame() {
   // Get current date in EST/EDT timezone
-  const today = new Date().toLocaleDateString('en-US', { 
+  const today = new Date().toLocaleDateString('en-US', {
     timeZone: 'America/New_York',
     year: 'numeric',
     month: '2-digit',
     day: '2-digit'
   });
-  
+
   // Convert from MM/DD/YYYY to YYYY-MM-DD format
   const [month, day, year] = today.split('/');
-  
+
   return gameConfig.games.find(game => game.date === today) || gameConfig.games[0];
 }
 
@@ -55,12 +55,12 @@ function App() {
     } else {
       copySelections.push({ film: "", costar: selectedCostar });
     }
-    
+
     if (selectedCostar === endingActor) {
       setSuccess(true);
       setSuccessModalOpen(true);
     }
-    
+
     setSelections(copySelections.slice(0, index + 1));
     localStorage.setItem('selections', JSON.stringify(copySelections))
   };
@@ -68,10 +68,10 @@ function App() {
   const renderSelectionComponents = () => {
     const components = [];
     const endingIndex = success ? selections.length - 1 : selections.length;
-    
+
     for (let i = 0; i <= endingIndex; i++) {
       const shouldRender = i === 0 || (selections[i - 1]?.costar && selections[i - 1]?.film);
-      
+
       if (shouldRender) {
         components.push(
           <div key={i}>
@@ -89,7 +89,7 @@ function App() {
         );
       }
     }
-    
+
     return components;
   };
 
@@ -120,7 +120,7 @@ function App() {
 
 function buildPathText(startingActor, path) {
   const pathElements = [<p key="start"><b>{startingActor}</b></p>];
-  
+
   path.forEach((step, i) => {
     pathElements.push(
       <p key={`film-${i}`}>
@@ -133,7 +133,7 @@ function buildPathText(startingActor, path) {
       </p>
     );
   });
-  
+
   return pathElements;
 }
 
@@ -166,12 +166,12 @@ function InstructionsModal({ onModalClose }) {
 function buildSuccessMessage(startingActor, path) {
   let message = "The Movie Game #3 \n\n";
   message += `🎬 Your Path (${path.length} moves)\n${startingActor}`;
-  
+
   path.forEach(step => {
     message += `\n⬇️ ${step.film}`;
     message += `\n${step.costar}`;
   });
-  
+
   return message;
 }
 
@@ -183,19 +183,27 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   const successMessage = buildSuccessMessage(startingActor, selections);
 
   const handleShare = async () => {
-    if (navigator.share) {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
+    const isMac = /(macintosh|macintel|macppc|mac68k|macos)/i.test(userAgent);
+
+    if (navigator.share && !(!isIOS || !isMac)) {
       try {
         await navigator.share({
           title: "The Movie Game",
           text: successMessage,
           url: "https://kiranthawardas.github.io/movie-game/",
         });
-        console.log('Content shared successfully!');
       } catch (error) {
         console.error('Error sharing content:', error);
       }
-    } else {
-      console.log('Web Share API not supported in this browser.');
+    }
+    else {
+      try {
+        await navigator.clipboard.writeText(successMessage);
+      } catch (error) {
+        console.error('Error copying content:', error);
+      }
     }
   };
 
