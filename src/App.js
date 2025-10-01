@@ -15,7 +15,6 @@ function getCurrentGame() {
   
   // Convert from MM/DD/YYYY to YYYY-MM-DD format
   const [month, day, year] = today.split('/');
-  const formattedDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
   
   return gameConfig.games.find(game => game.date === today) || gameConfig.games[0];
 }
@@ -24,10 +23,19 @@ function App() {
   const currentGame = useMemo(() => getCurrentGame(), []);
   const { startingActor, endingActor, idealPath } = currentGame;
 
-  const [selections, setSelections] = useState([]);
-  const [success, setSuccess] = useState(false);
-  const [successModalOpen, setSuccessModalOpen] = useState(false);
-  const [instructionsModalOpen, setInstructionsModalOpen] = useState(true);
+  const savedSelectionsString = localStorage.getItem('selections')
+  let initialSuccess = false;
+  if (savedSelectionsString) {
+    const parsedSavedSelections = JSON.parse(savedSelectionsString);
+    if (parsedSavedSelections[parsedSavedSelections.length - 1]["costar"] == endingActor) {
+      initialSuccess = true;
+    }
+  }
+
+  const [selections, setSelections] = useState(savedSelectionsString ? JSON.parse(savedSelectionsString) : []);
+  const [success, setSuccess] = useState(initialSuccess);
+  const [successModalOpen, setSuccessModalOpen] = useState(initialSuccess);
+  const [instructionsModalOpen, setInstructionsModalOpen] = useState(!savedSelectionsString);
 
   const setSelectedFilm = (index, selectedFilm) => {
     const copySelections = [...selections];
@@ -37,6 +45,7 @@ function App() {
       copySelections.push({ film: selectedFilm, costar: "" });
     }
     setSelections(copySelections.slice(0, index + 1));
+    localStorage.setItem('selections', JSON.stringify(copySelections))
   };
 
   const setSelectedCostar = (index, selectedCostar) => {
@@ -53,6 +62,7 @@ function App() {
     }
     
     setSelections(copySelections.slice(0, index + 1));
+    localStorage.setItem('selections', JSON.stringify(copySelections))
   };
 
   const renderSelectionComponents = () => {
