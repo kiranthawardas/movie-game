@@ -23,34 +23,35 @@ h1 {
 
 select {
   height: 3em;
-  width: 100%;
+  width: 21em;
   border-radius: 5px;
   text-align: center;
   text-wrap: auto;
   font-family: 'American Typewriter', Courier, monospace;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 500;
   background-color: white;
   color: black;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .selector {
-  display: inline-flex;
+  /* display: inline-flex; */
   margin-left: auto;
   margin-right: auto;
   width: 22em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  padding: 1em 0.5em 1em 0.5em;
+  padding: 0.5em 0em 0.5em 0em;
   border-radius: 10px;
   background-color: rgb(6, 125, 172);
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;;
 }
 
 .column {
   display: block;
-  width: 100%;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
@@ -82,8 +83,11 @@ select {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.path {
+  font-size: 0.95em;
+}
 .modal p {
-  font-size: 0.8em !important;
+  font-size: 1em !important;
   margin-bottom: 0.5em !important;
   margin-top: 0.5em !important;
 }

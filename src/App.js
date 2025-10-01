@@ -84,7 +84,6 @@ function App() {
               onSelectedFilmChange={setSelectedFilm}
               onSelectedCostarChange={setSelectedCostar}
             />
-            <br />
           </div>
         );
       }
@@ -139,10 +138,10 @@ function buildPathText(startingActor, path) {
 
 function InstructionsModal({ onModalClose }) {
   const examplePath = [
-    { film: "Catch Me If You Can", costar: "Leonardo DiCaprio" },
-    { film: "Once Upon a Time in Hollywood", costar: "Brad Pitt" },
+    { film: "Air", costar: "Jason Bateman" },
+    { film: "Tropic Thunder", costar: "Tom Cruise" },
   ];
-  const examplePathText = buildPathText("Tom Hanks", examplePath);
+  const examplePathText = buildPathText("Matt Damon", examplePath);
 
   return (
     <div className="modal">
@@ -155,9 +154,13 @@ function InstructionsModal({ onModalClose }) {
       <p>
         <b><u>Example:</u></b>
       </p>
-      <p>Starting Actor: Tom Hanks</p>
-      <p>Ending Actor: Brad Pitt</p>
-      {examplePathText}
+      <p>Starting Actor: Matt Damon</p>
+      <p>Ending Actor: Tom Cruise</p>
+
+      <div class="path"><i>
+        {examplePathText}
+      </i>
+      </div>
       <button onClick={onModalClose}>Close</button>
     </div>
   );
@@ -210,7 +213,11 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   return (
     <div className="winning-modal modal">
       <h2>Your Path</h2>
-      {pathText}
+      <div class="path">
+        <i>
+          {pathText}
+        </i>
+      </div>
       <button className="share-button" onClick={handleShare}>
         Share Results
         <svg className="share-icon" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +234,11 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
       {idealPathOpen && (
         <>
           <h2>Ideal Path</h2>
-          {idealPathText}
+          <div class="path">
+            <i>
+              {idealPathText}
+            </i>
+          </div>
         </>
       )}
     </div>
