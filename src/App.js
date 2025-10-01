@@ -94,7 +94,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>The Movie Game</h1>
+      <h1 class="main-header">The Movie Game</h1>
       <p className="start-end-actor-indicator">
         <b>Starting Actor:</b> {startingActor}
       </p>
@@ -145,7 +145,7 @@ function InstructionsModal({ onModalClose }) {
 
   return (
     <div className="modal">
-      <h2>Welcome</h2>
+      <h1>Welcome</h1>
       <p>
         Find the connection between the Starting Actor and the Ending Actor by
         linking them through movies and co-stars.
@@ -212,7 +212,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
 
   return (
     <div className="winning-modal modal">
-      <h2>Your Path</h2>
+      <h1>Your Path</h1>
       <div class="path">
         <i>
           {pathText}
@@ -233,7 +233,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
       </button>
       {idealPathOpen && (
         <>
-          <h2>Ideal Path</h2>
+          <h1>Ideal Path</h1>
           <div class="path">
             <i>
               {idealPathText}

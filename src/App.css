@@ -10,15 +10,18 @@ html {
   font-family: 'American Typewriter', Courier, monospace;
 }
 
-h1 {
+.main-header {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
   font-family: 'American Typewriter', Courier, monospace;
   font-size: 2.2em;
   font-weight: 800;
+}
+
+h1 {
+  margin-bottom:0px;
 }
 
 select {
