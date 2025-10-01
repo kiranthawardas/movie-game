@@ -2,7 +2,7 @@ import "./App.css";
 import movie_casts from "./movie_casts.json";
 import actor_filmographies from "./actor_filmographies.json";
 import gameConfig from "./game_config.json";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 function getCurrentGame() {
   // Get current date in EST/EDT timezone
@@ -23,19 +23,70 @@ function App() {
   const currentGame = useMemo(() => getCurrentGame(), []);
   const { startingActor, endingActor, idealPath } = currentGame;
 
-  const savedSelectionsString = localStorage.getItem('selections')
-  let initialSuccess = false;
-  if (savedSelectionsString) {
-    const parsedSavedSelections = JSON.parse(savedSelectionsString);
-    if (parsedSavedSelections[parsedSavedSelections.length - 1]["costar"] == endingActor) {
-      initialSuccess = true;
-    }
-  }
 
-  const [selections, setSelections] = useState(savedSelectionsString ? JSON.parse(savedSelectionsString) : []);
-  const [success, setSuccess] = useState(initialSuccess);
-  const [successModalOpen, setSuccessModalOpen] = useState(initialSuccess);
-  const [instructionsModalOpen, setInstructionsModalOpen] = useState(!savedSelectionsString);
+  // Initialize state with a function that reads localStorage
+  const [selections, setSelections] = useState(() => {
+    const savedSelectionsString = localStorage.getItem('selections');
+    if (savedSelectionsString) {
+      try {
+        return JSON.parse(savedSelectionsString);
+      } catch (err) {
+        localStorage.clear();
+        return [];
+      }
+    }
+    return [];
+  });
+
+  const [success, setSuccess] = useState(() => {
+    const savedSelectionsString = localStorage.getItem('selections');
+    if (savedSelectionsString) {
+      try {
+        const parsedSavedSelections = JSON.parse(savedSelectionsString);
+        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === endingActor;
+      } catch (err) {
+        return false;
+      }
+    }
+    return false;
+  });
+
+  const [successModalOpen, setSuccessModalOpen] = useState(() => {
+    const savedSelectionsString = localStorage.getItem('selections');
+    if (savedSelectionsString) {
+      try {
+        const parsedSavedSelections = JSON.parse(savedSelectionsString);
+        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === endingActor;
+      } catch (err) {
+        return false;
+      }
+    }
+    return false;
+  });
+
+  const [instructionsModalOpen, setInstructionsModalOpen] = useState(() => {
+    return !localStorage.getItem('selections');
+  });
+
+  useEffect(() => {
+    const savedCurrentGame = localStorage.getItem('currentGame');
+    if (savedCurrentGame) {
+      try {
+        const parsed = JSON.parse(savedCurrentGame);
+        if (JSON.stringify(parsed) !== JSON.stringify(currentGame)) {
+          localStorage.clear();
+          setSelections([]);
+          setSuccess(false);
+          setSuccessModalOpen(false);
+          setInstructionsModalOpen(true);
+        }
+      } catch (err) {
+        localStorage.clear();
+      }
+    } else {
+      localStorage.setItem('currentGame', JSON.stringify(currentGame));
+    }
+  }, [currentGame, endingActor]);
 
   const setSelectedFilm = (index, selectedFilm) => {
     const copySelections = [...selections];
