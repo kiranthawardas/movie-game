@@ -187,7 +187,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
     const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
     const isMac = /(macintosh|macintel|macppc|mac68k|macos)/i.test(userAgent);
 
-    if (navigator.share && !(!isIOS || !isMac)) {
+    if (navigator.share && (isIOS || isMac)) {
       try {
         await navigator.share({
           title: "The Movie Game",
