@@ -23,7 +23,6 @@ function App() {
   const currentGame = useMemo(() => getCurrentGame(), []);
   const { startingActor, endingActor, idealPath } = currentGame;
 
-
   // Initialize state with a function that reads localStorage
   const [selections, setSelections] = useState(() => {
     const savedSelectionsString = localStorage.getItem('selections');
@@ -69,6 +68,10 @@ function App() {
   });
 
   useEffect(() => {
+    if (localStorage.getItem("localStorageVersion") !== "1") {
+      localStorage.clear();
+      localStorage.setItem("version", "1");
+    }
     const savedCurrentGame = localStorage.getItem('currentGame');
     if (savedCurrentGame) {
       try {
