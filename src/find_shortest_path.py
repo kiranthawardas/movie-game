@@ -51,12 +51,12 @@ def find_actor_path(start_actor, end_actor, filmographies, casts):
                 
                 # Found the target!
                 if costar == end_actor:
-                    return path + [{"movie_name": movie, "costar": costar}]
+                    return path + [{"film": movie, "costar": costar}]
                 
                 # Not visited yet, add to queue
                 if costar not in visited:
                     visited.add(costar)
-                    new_path = path + [{"movie_name": movie, "costar": costar}]
+                    new_path = path + [{"film": movie, "costar": costar}]
                     queue.append((costar, new_path))
     
     return None  # No path found
@@ -68,5 +68,5 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path('Kevin Bacon', 'Chris Rock', filmographies, casts)
+result = find_actor_path('Tom Hanks', 'Brad Pitt', filmographies, casts)
 print(result)

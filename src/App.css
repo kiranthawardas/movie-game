@@ -1,59 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 html {
   background-color: #e3e3e1;
+  text-align: center;
 }
 
 .App {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Clear Sans","Helvetica Neue",Arial,sans-serif
+  font-family: 'American Typewriter', Courier, monospace;
 }
 
 h1 {
-  font-family: 'Courier New', Courier, monospace;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-family: 'American Typewriter', Courier, monospace;
+  font-size: 2.2em;
+  font-weight: 800;
 }
 
 select {
   height: 3em;
-  width:100%;
-  margin-left: auto;
-  margin-right:auto;
+  width: 100%;
+  border-radius: 5px;
   text-align: center;
-  border-radius: 4px;
   text-wrap: auto;
-  font-family:"Clear Sans","Helvetica Neue",Arial,sans-serif;
-  border-width: 2px;
+  font-family: 'American Typewriter', Courier, monospace;
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: white;
+  color: black;
 }
 
 .selector {
   display: inline-flex;
   margin-left: auto;
   margin-right: auto;
-  width:100%;
-  margin-bottom: 1em;
+  width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding: 1em 0.5em 1em 0.5em;
+  border-radius: 10px;
+  background-color: rgb(6, 125, 172);
 }
 
 .column {
   display: block;
-  width:95%;
-  margin-left: 0.7em;
-  margin-right:0.7em;
+  width: 100%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
-p {
-  margin-bottom:0.2em;
+.start-end-actor-indicator {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 23em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+
+.modal {
+  position: absolute;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  top: 5em;
+  margin-left: -11em;
+  width: 20em;
+  padding: 0 1em 1em 1em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.modal p {
+  font-size: 0.8em !important;
+  margin-bottom: 0.5em !important;
+  margin-top: 0.5em !important;
+}
+.modal h2 {
+  margin-bottom: 0.3em !important;
+}
+
+button {
+  color: white;
+  border-radius: 10px;
+  background-color:black;
+  padding:5px 15px 5px 15px;
+  font-family: 'American Typewriter', Courier, monospace;
+  font-weight: bold;
+  margin-top: 0.5em;
 }

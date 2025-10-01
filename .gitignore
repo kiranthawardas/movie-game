@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+TMDB_all_movies.csv
+movies_metadata_2.csv
