@@ -1,0 +1,15 @@
+{
+  "games": [
+    {
+      "day": 3,
+      "date": "2025-10-01",
+      "startingActor": "Marilyn Monroe",
+      "endingActor": "Timothée Chalamet",
+      "idealPath": [
+        { "film": "All About Eve", "costar": "Ann Robinson" },
+        { "film": "War of the Worlds (2005)", "costar": "Amy Ryan" },
+        { "film": "Beautiful Boy", "costar": "Timothée Chalamet" }
+      ]
+    }
+  ]
+}

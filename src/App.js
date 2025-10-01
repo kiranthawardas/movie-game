@@ -1,17 +1,29 @@
 import "./App.css";
 import movie_casts from "./movie_casts.json";
 import actor_filmographies from "./actor_filmographies.json";
-import { useState } from "react";
+import gameConfig from "./game_config.json";
+import { useState, useMemo } from "react";
 
-const STARTING_ACTOR = "Marilyn Monroe";
-const ENDING_ACTOR = "Timothée Chalamet";
-const IDEAL_PATH = [
-  { film: 'All About Eve', costar: 'Ann Robinson' },
-  { film: 'War of the Worlds (2005)', costar: 'Amy Ryan' },
-  { film: 'Beautiful Boy', costar: 'Timothée Chalamet' }
-];
+function getCurrentGame() {
+  // Get current date in EST/EDT timezone
+  const today = new Date().toLocaleDateString('en-US', { 
+    timeZone: 'America/New_York',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+  
+  // Convert from MM/DD/YYYY to YYYY-MM-DD format
+  const [month, day, year] = today.split('/');
+  const formattedDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+  
+  return gameConfig.games.find(game => game.date === today) || gameConfig.games[0];
+}
 
 function App() {
+  const currentGame = useMemo(() => getCurrentGame(), []);
+  const { startingActor, endingActor, idealPath } = currentGame;
+
   const [selections, setSelections] = useState([]);
   const [success, setSuccess] = useState(false);
   const [successModalOpen, setSuccessModalOpen] = useState(false);
@@ -35,7 +47,7 @@ function App() {
       copySelections.push({ film: "", costar: selectedCostar });
     }
     
-    if (selectedCostar === ENDING_ACTOR) {
+    if (selectedCostar === endingActor) {
       setSuccess(true);
       setSuccessModalOpen(true);
     }
@@ -56,7 +68,7 @@ function App() {
             <FilmAndCostarSelector
               success={success}
               index={i}
-              inputActor={selections[i - 1]?.costar || STARTING_ACTOR}
+              inputActor={selections[i - 1]?.costar || startingActor}
               selectedFilm={selections[i]?.film || ""}
               selectedCostar={selections[i]?.costar || ""}
               onSelectedFilmChange={setSelectedFilm}
@@ -75,11 +87,11 @@ function App() {
     <div className="App">
       <h1>The Movie Game</h1>
       <p className="start-end-actor-indicator">
-        <b>Starting Actor:</b> {STARTING_ACTOR}
+        <b>Starting Actor:</b> {startingActor}
       </p>
       {renderSelectionComponents()}
       <p className="start-end-actor-indicator">
-        <b>Ending Actor:</b> {ENDING_ACTOR}
+        <b>Ending Actor:</b> {endingActor}
       </p>
       {instructionsModalOpen && (
         <InstructionsModal onModalClose={() => setInstructionsModalOpen(false)} />
@@ -87,7 +99,8 @@ function App() {
       {success && successModalOpen && (
         <WinningModal
           selections={selections}
-          startingActor={STARTING_ACTOR}
+          startingActor={startingActor}
+          idealPath={idealPath}
           onModalClose={() => setSuccessModalOpen(false)}
         />
       )}
@@ -152,10 +165,10 @@ function buildSuccessMessage(startingActor, path) {
   return message;
 }
 
-function WinningModal({ selections, startingActor, onModalClose }) {
+function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   const [idealPathOpen, setIdealPathOpen] = useState(false);
 
-  const idealPathText = buildPathText(startingActor, IDEAL_PATH);
+  const idealPathText = buildPathText(startingActor, idealPath);
   const pathText = buildPathText(startingActor, selections);
   const successMessage = buildSuccessMessage(startingActor, selections);
 
