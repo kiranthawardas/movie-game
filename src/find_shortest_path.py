@@ -68,5 +68,17 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path('Tom Hanks', 'Brad Pitt', filmographies, casts)
+result = find_actor_path('Kevin James', 'Daniel Craig', filmographies, casts)
 print(result)
+
+# Marilyn Monroe, Timothée Chalamet
+# [{'film': 'All About Eve', 'costar': 'Ann Robinson'}, {'film': 'War of the Worlds (2005)', 'costar': 'Amy Ryan'}, {'film': 'Beautiful Boy', 'costar': 'Timothée Chalamet'}]
+
+# Pierce Brosnan, Ellie Kemper
+# [{'film': 'After the Sunset', 'costar': 'Jeff Garlin'}, {'film': 'Laggies', 'costar': 'Ellie Kemper'}]
+
+# Austin Butler, Harrison Ford
+# [{'film': 'Caught Stealing', 'costar': 'Griffin Dunne'}, {'film': 'Joan Didion: The Center Will Not Hold', 'costar': 'Harrison Ford'}]
+
+# Audrey Hepburn, Anil Kapoor
+# [{'film': 'Always (1989)', 'costar': 'Brad Johnson'}, {'film': 'Flight of the Intruder', 'costar': 'Ving Rhames'}, {'film': 'Mission: Impossible - Ghost Protocol', 'costar': 'Anil Kapoor'}]
