@@ -68,7 +68,7 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path('Kevin James', 'Daniel Craig', filmographies, casts)
+result = find_actor_path('Dev Patel', 'Christopher Lloyd', filmographies, casts)
 print(result)
 
 # Marilyn Monroe, Timothée Chalamet

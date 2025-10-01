@@ -6,9 +6,70 @@
       "startingActor": "Marilyn Monroe",
       "endingActor": "Timothée Chalamet",
       "idealPath": [
-        { "film": "All About Eve", "costar": "Ann Robinson" },
-        { "film": "War of the Worlds (2005)", "costar": "Amy Ryan" },
-        { "film": "Beautiful Boy", "costar": "Timothée Chalamet" }
+        {
+          "film": "All About Eve",
+          "costar": "Ann Robinson"
+        },
+        {
+          "film": "War of the Worlds (2005)",
+          "costar": "Amy Ryan"
+        },
+        {
+          "film": "Beautiful Boy",
+          "costar": "Timothée Chalamet"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2025-10-02",
+      "startingActor": "Austin Butler",
+      "endingActor": "Harrison Ford",
+      "idealPath": [
+        {
+          "film": "Caught Stealing",
+          "costar": "Griffin Dunne"
+        },
+        {
+          "film": "Joan Didion: The Center Will Not Hold",
+          "costar": "Harrison Ford"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2025-10-03",
+      "startingActor": "Audrey Hepburn",
+      "endingActor": "Anil Kapoor",
+      "idealPath": [
+        {
+          "film": "Always (1989)",
+          "costar": "Brad Johnson"
+        },
+        {
+          "film": "Flight of the Intruder",
+          "costar": "Ving Rhames"
+        },
+        {
+          "film": "Mission: Impossible - Ghost Protocol",
+          "costar": "Anil Kapoor"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2025-10-04",
+      "startingActor": "Dev Patel",
+      "endingActor": "Christopher Lloyd",
+      "idealPath": [
+        {
+          "film": "Chappie",
+          "costar": "Sigourney Weaver"
+        },
+        {
+          "film": "The Tale of Despereaux",
+          "costar": "Christopher Lloyd"
+        }
       ]
     }
   ]
