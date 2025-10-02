@@ -23,9 +23,22 @@ function App() {
   const currentGame = useMemo(() => getCurrentGame(), []);
   const { startingActor, endingActor, idealPath } = currentGame;
 
-  if (localStorage.getItem("localStorageVersion") !== "1") {
-    localStorage.clear();
-    localStorage.setItem("localStorageVersion", "1");
+  if (
+    !localStorage.getItem("localStorageVersion") ||
+    localStorage.getItem("localStorageVersion") !== "2"
+  ) {
+    localStorage.clear()
+    localStorage.setItem("localStorageVersion", "2");
+  }
+
+  if (
+    currentGame &&
+    (
+      !!!localStorage.getItem("currentGame") ||
+      JSON.parse(localStorage.getItem('currentGame')) !== currentGame
+    )
+  ) {
+    localStorage.setItem("currentGame", JSON.stringify(currentGame));
   }
 
   // Initialize state with a function that reads localStorage
