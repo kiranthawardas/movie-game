@@ -15,8 +15,9 @@ function getCurrentGame() {
 
   // Convert from MM/DD/YYYY to YYYY-MM-DD format
   const [month, day, year] = today.split('/');
+  const dateString = `${year}-${month}-${day}`
 
-  return gameConfig.games.find(game => game.date === today) || gameConfig.games[0];
+  return gameConfig.games.find(game => game.date === dateString) || gameConfig.games[0];
 }
 
 function App() {
@@ -30,14 +31,15 @@ function App() {
     localStorage.clear()
     localStorage.setItem("localStorageVersion", "2");
   }
-
+  
   if (
-    currentGame &&
     (
       !!!localStorage.getItem("currentGame") ||
-      JSON.parse(localStorage.getItem('currentGame')) !== currentGame
+      localStorage.getItem('currentGame') !== JSON.stringify(currentGame)
     )
   ) {
+    localStorage.removeItem('currentGame')
+    localStorage.removeItem('selections')
     localStorage.setItem("currentGame", JSON.stringify(currentGame));
   }
 
