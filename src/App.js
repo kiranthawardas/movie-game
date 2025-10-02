@@ -31,7 +31,7 @@ function App() {
     localStorage.clear()
     localStorage.setItem("localStorageVersion", "2");
   }
-  
+
   if (
     (
       !!!localStorage.getItem("currentGame") ||
@@ -257,11 +257,11 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   const idealPathText = buildPathText(startingActor, idealPath);
   const pathText = buildPathText(startingActor, selections);
   const successMessage = buildSuccessMessage(startingActor, selections);
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
+  const isMac = /(macintosh|macintel|macppc|mac68k|macos)/i.test(userAgent);
 
   const handleShare = async () => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
-    const isMac = /(macintosh|macintel|macppc|mac68k|macos)/i.test(userAgent);
 
     if (navigator.share && (isIOS || isMac)) {
       try {
@@ -283,6 +283,11 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
     }
   };
 
+  let shareText = "Share Results"
+  if (!(isIOS || isMac)) {
+    shareText = "Copy Results"
+  }
+
   return (
     <div className="winning-modal modal">
       <h1>Your Path</h1>
@@ -292,7 +297,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
         </i>
       </div>
       <button className="share-button" onClick={handleShare}>
-        Share Results
+        {shareText}
         <svg className="share-icon" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
           <circle cx="128" cy="256" r="48" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></circle>
           <circle cx="384" cy="112" r="48" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></circle>
