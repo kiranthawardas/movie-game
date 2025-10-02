@@ -39,6 +39,11 @@ select {
   margin-bottom: 0.3em;
 }
 
+select:disabled {
+  background-color: #9c9c9c;
+  cursor:not-allowed;
+}
+
 .selector {
   /* display: inline-flex; */
   margin-left: auto;
@@ -107,6 +112,7 @@ button {
   font-family: 'American Typewriter', Courier, monospace;
   font-weight: bold;
   margin-top: 0.5em;
+  font-size: 1em;
 }
 
 .share-icon {

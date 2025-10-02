@@ -39,36 +39,32 @@
     {
       "day": 5,
       "date": "2025-10-03",
-      "startingActor": "Audrey Hepburn",
-      "endingActor": "Anil Kapoor",
+      "startingActor": "Kumail Nanjiani",
+      "endingActor": "Emma Stone",
       "idealPath": [
         {
-          "film": "Always (1989)",
-          "costar": "Brad Johnson"
+          "film": "A Bug's Life",
+          "costar": "Denis Leary"
         },
         {
-          "film": "Flight of the Intruder",
-          "costar": "Ving Rhames"
-        },
-        {
-          "film": "Mission: Impossible - Ghost Protocol",
-          "costar": "Anil Kapoor"
+          "film": "Wag the Dog",
+          "costar": "Robert De Niro"
         }
       ]
     },
     {
       "day": 6,
       "date": "2025-10-04",
-      "startingActor": "Dev Patel",
+      "startingActor": "Kumail",
       "endingActor": "Christopher Lloyd",
       "idealPath": [
         {
-          "film": "Chappie",
-          "costar": "Sigourney Weaver"
+          "film": "Addicted to Fresno",
+          "costar": "Fred Armisen"
         },
         {
-          "film": "The Tale of Despereaux",
-          "costar": "Christopher Lloyd"
+          "film": "Battle of the Sexes",
+          "costar": "Emma Stone"
         }
       ]
     }
