@@ -26,10 +26,10 @@ function App() {
 
   if (
     !localStorage.getItem("localStorageVersion") ||
-    localStorage.getItem("localStorageVersion") !== "2"
+    localStorage.getItem("localStorageVersion") !== "3"
   ) {
     localStorage.clear()
-    localStorage.setItem("localStorageVersion", "2");
+    localStorage.setItem("localStorageVersion", "3");
   }
 
   if (

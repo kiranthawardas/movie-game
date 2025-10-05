@@ -67,6 +67,22 @@
           "costar": "Emma Stone"
         }
       ]
+    },
+    {
+      "day": 7,
+      "date": "2025-10-05",
+      "startingActor": "LeBron James",
+      "endingActor": "Shah Rukh Khan",
+      "idealPath": [
+        {
+          "film": "The Redeem Team",
+          "costar": "Larry Brown"
+        },
+        {
+          "film": "My Name Is Khan",
+          "costar": "Shah Rukh Khan"
+        }
+      ]
     }
   ]
 }
