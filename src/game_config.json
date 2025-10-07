@@ -83,6 +83,22 @@
           "costar": "Shah Rukh Khan"
         }
       ]
+    },
+    {
+      "day": 8,
+      "date": "2025-10-06",
+      "startingActor": "Bruce Willis",
+      "endingActor": "Millie Bobby Brown",
+      "idealPath": [
+        {
+          "film": "Between Two Ferns: The Movie",
+          "costar": "Tiffany Haddish"
+        },
+        {
+          "film": "Mariah Carey's Magical Christmas Special",
+          "costar": "Millie Bobby Brown"
+        }
+      ]
     }
   ]
 }
