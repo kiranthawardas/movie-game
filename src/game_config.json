@@ -99,6 +99,86 @@
           "costar": "Millie Bobby Brown"
         }
       ]
+    },
+    {
+      "day": 9,
+      "date": "2025-10-07",
+      "startingActor": "Alexandra Daddario",
+      "endingActor": "Liam Neeson",
+      "idealPath": [
+        {
+          "film": "Baked in Brooklyn",
+          "costar": "Al Sapienza"
+        },
+        {
+          "film": "Taken 3",
+          "costar": "Liam Neeson"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2025-10-08",
+      "startingActor": "Idina Menzel",
+      "endingActor": "Robert Downey Jr.",
+      "idealPath": [
+        {
+          "film": "Disenchanted",
+          "costar": "Alan Tudyk"
+        },
+        {
+          "film": "Wonder Boys",
+          "costar": "Robert Downey Jr."
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "date": "2025-10-09",
+      "startingActor": "Daniel Radcliffe",
+      "endingActor": "Idris Elba",
+      "idealPath": [
+        {
+          "film": "Beast of Burden",
+          "costar": "Mark Rhino Smith"
+        },
+        {
+          "film": "Heads of State",
+          "costar": "Idris Elba"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "date": "2025-10-10",
+      "startingActor": "Jamie Lee Curtis",
+      "endingActor": "Alan Rickman",
+      "idealPath": [
+        {
+          "film": "A Fish Called Wanda",
+          "costar": "John Cleese"
+        },
+        {
+          "film": "Harry Potter and the Chamber of Secrets",
+          "costar": "Alan Rickman"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "date": "2025-10-11",
+      "startingActor": "Carrie Fisher",
+      "endingActor": "Miranda Cosgrove",
+      "idealPath": [
+        {
+          "film": "Austin Powers: International Man of Mystery",
+          "costar": "Michael McDonald"
+        },
+        {
+          "film": "Mother of the Bride",
+          "costar": "Miranda Cosgrove"
+        }
+      ]
     }
   ]
 }

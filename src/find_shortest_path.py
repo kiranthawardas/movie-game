@@ -1,5 +1,6 @@
 import json
 from collections import deque
+import sys
 
 actor_filmographies_path = (
     "/Users/kiranthawardas/Documents/movie-game/src/actor_filmographies.json"
@@ -68,9 +69,8 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path("Bruce Willis", 'Millie Bobby Brown', filmographies, casts)
-print(result)
-
+result = find_actor_path("Carrie Fisher", "Miranda Cosgrove", filmographies, casts)
+json.dump(result, sys.stdout, indent=4) 
 # Marilyn Monroe, Timothée Chalamet
 # [{'film': 'All About Eve', 'costar': 'Ann Robinson'}, {'film': 'War of the Worlds (2005)', 'costar': 'Amy Ryan'}, {'film': 'Beautiful Boy', 'costar': 'Timothée Chalamet'}]
 
