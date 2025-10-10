@@ -179,6 +179,22 @@
           "costar": "Miranda Cosgrove"
         }
       ]
+    },
+    {
+      "day": 14,
+      "date": "2025-10-12",
+      "startingActor": "George Lopez",
+      "endingActor": "Jeremy Strong",
+      "idealPath": [
+        {
+          "film": "Bread and Roses",
+          "costar": "Samuel West"
+        },
+        {
+          "film": "The Gentlemen",
+          "costar": "Jeremy Strong"
+        }
+      ]
     }
   ]
 }
