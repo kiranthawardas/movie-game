@@ -195,6 +195,118 @@
           "costar": "Jeremy Strong"
         }
       ]
+    },
+    {
+      "day": 15,
+      "date": "2025-10-13",
+      "startingActor": "George Lopez",
+      "endingActor": "Jeremy Strong",
+      "idealPath": [
+        {
+          "film": "Bread and Roses",
+          "costar": "Samuel West"
+        },
+        {
+          "film": "The Gentlemen",
+          "costar": "Jeremy Strong"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "date": "2025-10-14",
+      "startingActor": "Sofía Vergara",
+      "endingActor": "Tom Hardy",
+      "idealPath": [
+        {
+          "film": "Big Trouble",
+          "costar": "Tom Sizemore"
+        },
+        {
+          "film": "Black Hawk Down",
+          "costar": "Tom Hardy"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "date": "2025-10-15",
+      "startingActor": "Carrot Top",
+      "endingActor": "Al Pacino",
+      "idealPath": [
+        {
+          "film": "Chairman of the Board",
+          "costar": "Jack Warden"
+        },
+        {
+          "film": "...And Justice for All",
+          "costar": "Al Pacino"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "date": "2025-10-16",
+      "startingActor": "Rashida Jones",
+      "endingActor": "Zachary Levi",
+      "idealPath": [
+        {
+          "film": "A Very Murray Christmas",
+          "costar": "Amy Poehler"
+        },
+        {
+          "film": "Alvin and the Chipmunks: The Squeakquel",
+          "costar": "Zachary Levi"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "date": "2025-10-17",
+      "startingActor": "Owen Wilson",
+      "endingActor": "Anna Kendrick",
+      "idealPath": [
+        {
+          "film": "Anaconda (1997)",
+          "costar": "Jennifer Lopez"
+        },
+        {
+          "film": "What to Expect When You're Expecting",
+          "costar": "Anna Kendrick"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "date": "2025-10-18",
+      "startingActor": "Charlie Sheen",
+      "endingActor": "Kevin Costner",
+      "idealPath": [
+        {
+          "film": "A Glimpse Inside the Mind of Charles Swan III",
+          "costar": "Colleen Camp"
+        },
+        {
+          "film": "Rumor Has It...",
+          "costar": "Kevin Costner"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "date": "2025-10-19",
+      "startingActor": "Rowan Atkinson",
+      "endingActor": "Benedict Cumberbatch",
+      "idealPath": [
+        {
+          "film": "Bean",
+          "costar": "Peter Capaldi"
+        },
+        {
+          "film": "The Fifth Estate",
+          "costar": "Benedict Cumberbatch"
+        }
+      ]
     }
   ]
 }

@@ -69,7 +69,7 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path("George Lopez", "Jeremy Strong", filmographies, casts)
+result = find_actor_path("Rowan Atkinson", "Benedict Cumberbatch", filmographies, casts)
 json.dump(result, sys.stdout, indent=4) 
 # Marilyn Monroe, Timothée Chalamet
 # [{'film': 'All About Eve', 'costar': 'Ann Robinson'}, {'film': 'War of the Worlds (2005)', 'costar': 'Amy Ryan'}, {'film': 'Beautiful Boy', 'costar': 'Timothée Chalamet'}]
