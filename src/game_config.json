@@ -307,6 +307,54 @@
           "costar": "Benedict Cumberbatch"
         }
       ]
+    },
+    {
+      "day": 22,
+      "date": "2025-10-20",
+      "startingActor": "Courteney Cox",
+      "endingActor": "Armie Hammer",
+      "idealPath": [
+        {
+          "film": "3000 Miles to Graceland",
+          "costar": "David Arquette"
+        },
+        {
+          "film": "Entourage",
+          "costar": "Armie Hammer"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "date": "2025-10-21",
+      "startingActor": "Helena Bonham Carter",
+      "endingActor": "Vin Diesel",
+      "idealPath": [
+        {
+          "film": "A Room with a View",
+          "costar": "Judi Dench"
+        },
+        {
+          "film": "The Chronicles of Riddick",
+          "costar": "Vin Diesel"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "date": "2025-10-22",
+      "startingActor": "Dwayne Johnson",
+      "endingActor": "Marlon Brando",
+      "idealPath": [
+        {
+          "film": "Be Cool",
+          "costar": "George Fisher"
+        },
+        {
+          "film": "Christopher Columbus: The Discovery",
+          "costar": "Marlon Brando"
+        }
+      ]
     }
   ]
 }
