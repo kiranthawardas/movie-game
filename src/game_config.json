@@ -355,6 +355,54 @@
           "costar": "Marlon Brando"
         }
       ]
+    },
+    {
+      "day": 25,
+      "date": "2025-10-23",
+      "startingActor": "Ashton Kutcher",
+      "endingActor": "Sean Connery",
+      "idealPath": [
+        {
+          "film": "A Lot Like Love",
+          "costar": "Amanda Peet"
+        },
+        {
+          "film": "Playing by Heart",
+          "costar": "Sean Connery"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "date": "2025-10-25",
+      "startingActor": "David Tennant",
+      "endingActor": "Blake Lively",
+      "idealPath": [
+        {
+          "film": "Chip 'n Dale: Rescue Rangers",
+          "costar": "Keegan-Michael Key"
+        },
+        {
+          "film": "IF",
+          "costar": "Blake Lively"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "date": "2025-10-26",
+      "startingActor": "Tom Brady",
+      "endingActor": "Emma Stone",
+      "idealPath": [
+        {
+          "film": "80 for Brady",
+          "costar": "Guy Fieri"
+        },
+        {
+          "film": "The Interview",
+          "costar": "Emma Stone"
+        }
+      ]
     }
   ]
 }
