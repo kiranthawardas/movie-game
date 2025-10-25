@@ -373,8 +373,8 @@
       ]
     },
     {
-      "day": 27,
-      "date": "2025-10-25",
+      "day": 26,
+      "date": "2025-10-24",
       "startingActor": "David Tennant",
       "endingActor": "Blake Lively",
       "idealPath": [
@@ -389,8 +389,8 @@
       ]
     },
     {
-      "day": 28,
-      "date": "2025-10-26",
+      "day": 27,
+      "date": "2025-10-25",
       "startingActor": "Tom Brady",
       "endingActor": "Emma Stone",
       "idealPath": [
@@ -401,6 +401,86 @@
         {
           "film": "The Interview",
           "costar": "Emma Stone"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "date": "2025-10-26",
+      "startingActor": "Kal Penn",
+      "endingActor": "Sean Penn",
+      "idealPath": [
+        {
+          "film": "A Lot Like Love",
+          "costar": "Kathryn Hahn"
+        },
+        {
+          "film": "The Secret Life of Walter Mitty",
+          "costar": "Sean Penn"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "date": "2025-10-27",
+      "startingActor": "John Malkovich",
+      "endingActor": "John Mulaney",
+      "idealPath": [
+        {
+          "film": "Adaptation.",
+          "costar": "Nicolas Cage"
+        },
+        {
+          "film": "Spider-Man: Into the Spider-Verse",
+          "costar": "John Mulaney"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "date": "2025-10-28",
+      "startingActor": "Dylan Sprouse",
+      "endingActor": "Cameron Diaz",
+      "idealPath": [
+        {
+          "film": "After We Collided",
+          "costar": "Selma Blair"
+        },
+        {
+          "film": "The Sweetest Thing",
+          "costar": "Cameron Diaz"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "date": "2025-10-29",
+      "startingActor": "Cole Sprouse",
+      "endingActor": "Adam Driver",
+      "idealPath": [
+        {
+          "film": "Big Daddy",
+          "costar": "Adam Sandler"
+        },
+        {
+          "film": "The Meyerowitz Stories (New and Selected)",
+          "costar": "Adam Driver"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "date": "2025-10-30",
+      "startingActor": "Hasan Minhaj",
+      "endingActor": "Brenda Song",
+      "idealPath": [
+        {
+          "film": "Haunted Mansion",
+          "costar": "Jamie Lee Curtis"
+        },
+        {
+          "film": "The Last Showgirl",
+          "costar": "Brenda Song"
         }
       ]
     }
