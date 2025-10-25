@@ -483,6 +483,86 @@
           "costar": "Brenda Song"
         }
       ]
+    },
+    {
+      "day": 33,
+      "date": "2025-10-31",
+      "startingActor": "Ashton Kutcher",
+      "endingActor": "Ashley Tisdale",
+      "idealPath": [
+        {
+          "film": "A Lot Like Love",
+          "costar": "Holmes Osborne"
+        },
+        {
+          "film": "Donnie Darko",
+          "costar": "Ashley Tisdale"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "date": "2025-11-01",
+      "startingActor": "Frankie Muniz",
+      "endingActor": "David Corenswet",
+      "idealPath": [
+        {
+          "film": "My Dog Skip",
+          "costar": "Luke Wilson"
+        },
+        {
+          "film": "Look Both Ways",
+          "costar": "David Corenswet"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "date": "2025-11-02",
+      "startingActor": "Terry Crews",
+      "endingActor": "Mindy Kaling",
+      "idealPath": [
+        {
+          "film": "Balls of Fury",
+          "costar": "David Koechner"
+        },
+        {
+          "film": "The 40 Year Old Virgin",
+          "costar": "Mindy Kaling"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "date": "2025-11-03",
+      "startingActor": "Steve Carell",
+      "endingActor": "Patrick Stewart",
+      "idealPath": [
+        {
+          "film": "Alexander and the Terrible, Horrible, No Good, Very Bad Day",
+          "costar": "Eric Edelstein"
+        },
+        {
+          "film": "Green Room",
+          "costar": "Patrick Stewart"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "date": "2025-11-04",
+      "startingActor": "Elliot Page",
+      "endingActor": "Keanu Reeves",
+      "idealPath": [
+        {
+          "film": "Flatliners",
+          "costar": "Diego Luna"
+        },
+        {
+          "film": "DC League of Super-Pets",
+          "costar": "Keanu Reeves"
+        }
+      ]
     }
   ]
 }
