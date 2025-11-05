@@ -563,6 +563,70 @@
           "costar": "Keanu Reeves"
         }
       ]
+    },
+    {
+      "day": 38,
+      "date": "2025-11-05",
+      "startingActor": "Jennifer Aniston",
+      "endingActor": "Gwyneth Paltrow",
+      "idealPath": [
+        {
+          "film": "Along Came Polly",
+          "costar": "Alec Baldwin"
+        },
+        {
+          "film": "Malice",
+          "costar": "Gwyneth Paltrow"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "date": "2025-11-06",
+      "startingActor": "Jacob Elordi",
+      "endingActor": "James Spader",
+      "idealPath": [
+        {
+          "film": "The Kissing Booth",
+          "costar": "Molly Ringwald"
+        },
+        {
+          "film": "Pretty in Pink",
+          "costar": "James Spader"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "date": "2025-11-07",
+      "startingActor": "Dakota Johnson",
+      "endingActor": "Dakota Fanning",
+      "idealPath": [
+        {
+          "film": "21 Jump Street",
+          "costar": "Channing Tatum"
+        },
+        {
+          "film": "War of the Worlds (2005)",
+          "costar": "Dakota Fanning"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "date": "2025-11-08",
+      "startingActor": "Courteney Cox",
+      "endingActor": "Colin Jost",
+      "idealPath": [
+        {
+          "film": "Barnyard",
+          "costar": "William Calvert"
+        },
+        {
+          "film": "The Bad Guys 2",
+          "costar": "Colin Jost"
+        }
+      ]
     }
   ]
 }
