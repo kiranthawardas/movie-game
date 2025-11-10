@@ -627,6 +627,106 @@
           "costar": "Colin Jost"
         }
       ]
+    },
+    {
+      "day": 42,
+      "date": "2025-11-09",
+      "startingActor": "Courteney Cox",
+      "endingActor": "Colin Jost",
+      "idealPath": [
+        {
+          "film": "Barnyard",
+          "costar": "William Calvert"
+        },
+        {
+          "film": "The Bad Guys 2",
+          "costar": "Colin Jost"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "date": "2025-11-10",
+      "startingActor": "Taylor Swift",
+      "endingActor": "Zach Galifianakis",
+      "idealPath": [
+        {
+          "film": "Amsterdam",
+          "costar": "Andrea Riseborough"
+        },
+        {
+          "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+          "costar": "Zach Galifianakis"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "date": "2025-11-11",
+      "startingActor": "Sarah Michelle Gellar",
+      "endingActor": "Willem Dafoe",
+      "idealPath": [
+        {
+          "film": "Clerks III",
+          "costar": "Ben Affleck"
+        },
+        {
+          "film": "The Last Thing He Wanted",
+          "costar": "Willem Dafoe"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "date": "2025-11-12",
+      "startingActor": "Hrithik Roshan",
+      "endingActor": "Ben Stiller",
+      "idealPath": [
+        {
+          "film": "Agneepath",
+          "costar": "Brijendra Kala"
+        },
+        {
+          "film": "83",
+          "costar": "David Burton"
+        },
+        {
+          "film": "Starsky & Hutch",
+          "costar": "Ben Stiller"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "date": "2025-11-13",
+      "startingActor": "Ken Jeong",
+      "endingActor": "Denzel Washington",
+      "idealPath": [
+        {
+          "film": "Avengers: Endgame",
+          "costar": "Angela Bassett"
+        },
+        {
+          "film": "Malcolm X",
+          "costar": "Denzel Washington"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "date": "2025-11-14",
+      "startingActor": "Bill Murray",
+      "endingActor": "Katherine Heigl",
+      "idealPath": [
+        {
+          "film": "A Glimpse Inside the Mind of Charles Swan III",
+          "costar": "Katheryn Winnick"
+        },
+        {
+          "film": "Killers (2010)",
+          "costar": "Katherine Heigl"
+        }
+      ]
     }
   ]
 }
