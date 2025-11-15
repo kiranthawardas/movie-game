@@ -1,12 +1,16 @@
 import json
 from collections import deque
 import sys
+import random
 
 actor_filmographies_path = (
     "/Users/kiranthawardas/Documents/movie-game/src/actor_filmographies.json"
 )
 movie_casts_path = (
     "/Users/kiranthawardas/Documents/movie-game/src/movie_casts.json"
+)
+actor_list_path = (
+    "/Users/kiranthawardas/Documents/movie-game/src/actor_list.json"
 )
 
 from collections import deque
@@ -69,8 +73,22 @@ with open(actor_filmographies_path, mode="r", newline="") as file:
 with open(movie_casts_path, mode="r", newline="") as file:
     casts = json.load(file)
 
-result = find_actor_path("Bill Murray", "Katherine Heigl", filmographies, casts)
-json.dump(result, sys.stdout, indent=4) 
+with open(actor_list_path, mode="r", newline="") as file:
+    actor_list = json.load(file)
+
+actor_1 = random.choice(actor_list)
+actor_2 = random.choice(actor_list)
+
+result = find_actor_path(actor_1, actor_2, filmographies, casts)
+
+output = {
+    "day": 1,
+    "date": "2025-11-00",
+    "startingActor": actor_1,
+    "endingActor": actor_2,
+    "idealPath": result
+}
+json.dump(output, sys.stdout, indent=4) 
 # Marilyn Monroe, Timothée Chalamet
 # [{'film': 'All About Eve', 'costar': 'Ann Robinson'}, {'film': 'War of the Worlds (2005)', 'costar': 'Amy Ryan'}, {'film': 'Beautiful Boy', 'costar': 'Timothée Chalamet'}]
 

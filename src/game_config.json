@@ -727,6 +727,118 @@
           "costar": "Katherine Heigl"
         }
       ]
+    },
+    {
+      "day": 48,
+      "date": "2025-11-15",
+      "startingActor": "Gene Wilder",
+      "endingActor": "Woody Harrelson",
+      "idealPath": [
+        {
+          "film": "Alice in Wonderland (1999)",
+          "costar": "Ben Kingsley"
+        },
+        {
+          "film": "TransSiberian",
+          "costar": "Woody Harrelson"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "date": "2025-11-16",
+      "startingActor": "Jeff Bridges",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "8 Million Ways to Die",
+          "costar": "Andy Garcia"
+        },
+        {
+          "film": "Ocean's Eleven (2001)",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "date": "2025-11-17",
+      "startingActor": "Jeremy Renner",
+      "endingActor": "Kris Kristofferson",
+      "idealPath": [
+        {
+          "film": "A Little Trip to Heaven",
+          "costar": "Forest Whitaker"
+        },
+        {
+          "film": "Powder Blue",
+          "costar": "Kris Kristofferson"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "date": "2025-11-18",
+      "startingActor": "Patrick Swayze",
+      "endingActor": "Robert Downey Jr.",
+      "idealPath": [
+        {
+          "film": "11:14",
+          "costar": "Clark Gregg"
+        },
+        {
+          "film": "Iron Man",
+          "costar": "Robert Downey Jr."
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "date": "2025-11-19",
+      "startingActor": "Michael J. Fox",
+      "endingActor": "Hugh Jackman",
+      "idealPath": [
+        {
+          "film": "Annie",
+          "costar": "Alan D. Purwin"
+        },
+        {
+          "film": "Real Steel",
+          "costar": "Hugh Jackman"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "date": "2025-11-20",
+      "startingActor": "Michael Keaton",
+      "endingActor": "Nicolas Cage",
+      "idealPath": [
+        {
+          "film": "American Assassin",
+          "costar": "Alaa Safi"
+        },
+        {
+          "film": "Outcast",
+          "costar": "Nicolas Cage"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "date": "2025-11-21",
+      "startingActor": "Adrien Brody",
+      "endingActor": "Ewan McGregor",
+      "idealPath": [
+        {
+          "film": "American Heist",
+          "costar": "Hayden Christensen"
+        },
+        {
+          "film": "Obi-Wan Kenobi: A Jedi's Return",
+          "costar": "Ewan McGregor"
+        }
+      ]
     }
   ]
 }
