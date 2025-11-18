@@ -839,6 +839,186 @@
           "costar": "Ewan McGregor"
         }
       ]
+    },
+    {
+      "day": 55,
+      "date": "2025-11-22",
+      "startingActor": "Keanu Reeves",
+      "endingActor": "David Harbour",
+      "idealPath": [
+        {
+          "film": "A Scanner Darkly",
+          "costar": "Jason Douglas"
+        },
+        {
+          "film": "Parkland",
+          "costar": "David Harbour"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "date": "2025-11-23",
+      "startingActor": "Gerard Butler",
+      "endingActor": "Joaquin Phoenix",
+      "idealPath": [
+        {
+          "film": "300",
+          "costar": "Arthur Holden"
+        },
+        {
+          "film": "Beau Is Afraid",
+          "costar": "Joaquin Phoenix"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "date": "2025-11-24",
+      "startingActor": "Dakota Fanning",
+      "endingActor": "Billy Bob Thornton",
+      "idealPath": [
+        {
+          "film": "Brimstone",
+          "costar": "Hon Ping Tang"
+        },
+        {
+          "film": "London Fields",
+          "costar": "Billy Bob Thornton"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "date": "2025-11-25",
+      "startingActor": "Quentin Tarantino",
+      "endingActor": "Tom Selleck",
+      "idealPath": [
+        {
+          "film": "Corman's World",
+          "costar": "William Shatner"
+        },
+        {
+          "film": "For the Love of Spock",
+          "costar": "Tom Selleck"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "date": "2025-11-26",
+      "startingActor": "Danny Trejo",
+      "endingActor": "Woody Harrelson",
+      "idealPath": [
+        {
+          "film": "12:01",
+          "costar": "Martin Landau"
+        },
+        {
+          "film": "EDtv",
+          "costar": "Woody Harrelson"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "date": "2025-11-27",
+      "startingActor": "Clark Gable",
+      "endingActor": "Sydney Sweeney",
+      "idealPath": [
+        {
+          "film": "Ben-Hur: A Tale of the Christ",
+          "costar": "Bill Elliott"
+        },
+        {
+          "film": "Scarface",
+          "costar": "Jack Perry"
+        },
+        {
+          "film": "Once Upon a Time... in Hollywood",
+          "costar": "Sydney Sweeney"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "date": "2025-11-28",
+      "startingActor": "David Morse",
+      "endingActor": "Daniel Day-Lewis",
+      "idealPath": [
+        {
+          "film": "16 Blocks",
+          "costar": "Peter McRobbie"
+        },
+        {
+          "film": "Lincoln",
+          "costar": "Daniel Day-Lewis"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "date": "2025-11-29",
+      "startingActor": "Tom Selleck",
+      "endingActor": "Patrick Swayze",
+      "idealPath": [
+        {
+          "film": "3 Men and a Little Lady",
+          "costar": "Sydney Walsh"
+        },
+        {
+          "film": "Point Break (1991)",
+          "costar": "Patrick Swayze"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "date": "2025-11-30",
+      "startingActor": "Sacha Baron Cohen",
+      "endingActor": "Sean Penn",
+      "idealPath": [
+        {
+          "film": "Alice Through the Looking Glass",
+          "costar": "Johnny Depp"
+        },
+        {
+          "film": "Before Night Falls",
+          "costar": "Sean Penn"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "date": "2025-12-01",
+      "startingActor": "Ben Affleck",
+      "endingActor": "Karl Urban",
+      "idealPath": [
+        {
+          "film": "Air",
+          "costar": "Matt Damon"
+        },
+        {
+          "film": "The Bourne Supremacy",
+          "costar": "Karl Urban"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "date": "2025-12-02",
+      "startingActor": "Jude Law",
+      "endingActor": "Mia Goth",
+      "idealPath": [
+        {
+          "film": "360",
+          "costar": "Johannes Krisch"
+        },
+        {
+          "film": "A Cure for Wellness",
+          "costar": "Mia Goth"
+        }
+      ]
     }
   ]
 }
