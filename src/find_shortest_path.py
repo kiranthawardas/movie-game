@@ -83,7 +83,7 @@ result = find_actor_path(actor_1, actor_2, filmographies, casts)
 
 output = {
     "day": 1,
-    "date": "2025-11-00",
+    "date": "2026-01-10",
     "startingActor": actor_1,
     "endingActor": actor_2,
     "idealPath": result

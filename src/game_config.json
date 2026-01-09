@@ -1019,6 +1019,410 @@
           "costar": "Mia Goth"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-07",
+      "startingActor": "Kajol",
+      "endingActor": "Charles Bronson",
+      "idealPath": [
+        {
+          "film": "Baazigar",
+          "costar": "Dalip Tahil"
+        },
+        {
+          "film": "Gandhi",
+          "costar": "Derek Lyons"
+        },
+        {
+          "film": "Death Wish 3",
+          "costar": "Charles Bronson"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "date": "2025-12-08",
+      "startingActor": "Elle Fanning",
+      "endingActor": "Alyson Hannigan",
+      "idealPath": [
+        {
+          "film": "3 Generations",
+          "costar": "Maxwell Simkins"
+        },
+        {
+          "film": "Kim Possible",
+          "costar": "Alyson Hannigan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-09",
+      "startingActor": "Benedict Cumberbatch",
+      "endingActor": "Ethan Hawke",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Chris Chalk"
+        },
+        {
+          "film": "Before the Devil Knows You're Dead",
+          "costar": "Ethan Hawke"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-10",
+      "startingActor": "Anna Kendrick",
+      "endingActor": "Dustin Hoffman",
+      "idealPath": [
+        {
+          "film": "50/50",
+          "costar": "Matt Frewer"
+        },
+        {
+          "film": "Ishtar",
+          "costar": "Dustin Hoffman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-11",
+      "startingActor": "Laurence Fishburne",
+      "endingActor": "Antonio Banderas",
+      "idealPath": [
+        {
+          "film": "21",
+          "costar": "Jeff 'JJ' Dashnaw"
+        },
+        {
+          "film": "Spy Kids",
+          "costar": "Antonio Banderas"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-14",
+      "startingActor": "Val Kilmer",
+      "endingActor": "Kirsten Dunst",
+      "idealPath": [
+        {
+          "film": "10th & Wolf",
+          "costar": "Giovanni Ribisi"
+        },
+        {
+          "film": "The Virgin Suicides",
+          "costar": "Kirsten Dunst"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-15",
+      "startingActor": "Sidney Poitier",
+      "endingActor": "Patrick Stewart",
+      "idealPath": [
+        {
+          "film": "In the Heat of the Night",
+          "costar": "Matt Clark"
+        },
+        {
+          "film": "A Million Ways to Die in the West",
+          "costar": "Patrick Stewart"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-16",
+      "startingActor": "Kareena Kapoor Khan",
+      "endingActor": "Margot Robbie",
+      "idealPath": [
+        {
+          "film": "Brothers (2015)",
+          "costar": "Daniel Bernhardt"
+        },
+        {
+          "film": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+          "costar": "Margot Robbie"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-17",
+      "startingActor": "Evangeline Lilly",
+      "endingActor": "Billy Bob Thornton",
+      "idealPath": [
+        {
+          "film": "Afterwards",
+          "costar": "John Malkovich"
+        },
+        {
+          "film": "Cut Bank",
+          "costar": "Billy Bob Thornton"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-18",
+      "startingActor": "Dakota Fanning",
+      "endingActor": "Sadie Sink",
+      "idealPath": [
+        {
+          "film": "Once Upon a Time... in Hollywood",
+          "costar": "Maya Hawke"
+        },
+        {
+          "film": "Fear Street: 1994",
+          "costar": "Sadie Sink"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-19",
+      "startingActor": "Millie Bobby Brown",
+      "endingActor": "Michael J. Fox",
+      "idealPath": [
+        {
+          "film": "The Electric State",
+          "costar": "Giancarlo Esposito"
+        },
+        {
+          "film": "Blue in the Face",
+          "costar": "Michael J. Fox"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-20",
+      "startingActor": "Leonardo DiCaprio",
+      "endingActor": "Paul Thomas Anderson",
+      "idealPath": [
+        {
+          "film": "Catch Me If You Can",
+          "costar": "Ana Maria Quintana"
+        },
+        {
+          "film": "Minority Report",
+          "costar": "Paul Thomas Anderson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2025-12-21",
+      "startingActor": "Michelle Pfeiffer",
+      "endingActor": "Patrick Swayze",
+      "idealPath": [
+        {
+          "film": "A Thousand Acres",
+          "costar": "Beth Grant"
+        },
+        {
+          "film": "Donnie Darko",
+          "costar": "Patrick Swayze"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-09",
+      "startingActor": "Amy Adams",
+      "endingActor": "Elle Fanning",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Alessandro Nivola"
+        },
+        {
+          "film": "Ginger & Rosa",
+          "costar": "Elle Fanning"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-10",
+      "startingActor": "Kareena Kapoor Khan",
+      "endingActor": "John Rhys-Davies",
+      "idealPath": [
+        {
+          "film": "Agent Vinod",
+          "costar": "Gulshan Grover"
+        },
+        {
+          "film": "Prisoners of the Sun",
+          "costar": "John Rhys-Davies"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-11",
+      "startingActor": "Matthew Macfadyen",
+      "endingActor": "Natalie Portman",
+      "idealPath": [
+        {
+          "film": "Anna Karenina",
+          "costar": "Domhnall Gleeson"
+        },
+        {
+          "film": "Fountain of Youth",
+          "costar": "Natalie Portman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-12",
+      "startingActor": "Dakota Fanning",
+      "endingActor": "Don Cheadle",
+      "idealPath": [
+        {
+          "film": "American Pastoral",
+          "costar": "Ewan McGregor"
+        },
+        {
+          "film": "Miles Ahead",
+          "costar": "Don Cheadle"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-13",
+      "startingActor": "James Earl Jones",
+      "endingActor": "Hailee Steinfeld",
+      "idealPath": [
+        {
+          "film": "Clear and Present Danger",
+          "costar": "Harrison Ford"
+        },
+        {
+          "film": "Ender's Game",
+          "costar": "Hailee Steinfeld"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-14",
+      "startingActor": "Elizabeth Olsen",
+      "endingActor": "Anna Kendrick",
+      "idealPath": [
+        {
+          "film": "Avengers: Age of Ultron",
+          "costar": "Chris Evans"
+        },
+        {
+          "film": "Scott Pilgrim vs. the World",
+          "costar": "Anna Kendrick"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-15",
+      "startingActor": "Katheryn Winnick",
+      "endingActor": "Kirsten Dunst",
+      "idealPath": [
+        {
+          "film": "50 First Dates",
+          "costar": "Maya Rudolph"
+        },
+        {
+          "film": "Fight for Your Right Revisited",
+          "costar": "Kirsten Dunst"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-16",
+      "startingActor": "Kris Kristofferson",
+      "endingActor": "Colin Farrell",
+      "idealPath": [
+        {
+          "film": "Blade",
+          "costar": "Jenya Lano"
+        },
+        {
+          "film": "S.W.A.T. (2003)",
+          "costar": "Colin Farrell"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-17",
+      "startingActor": "Katherine Parkinson",
+      "endingActor": "Daniel Day-Lewis",
+      "idealPath": [
+        {
+          "film": "How to Lose Friends & Alienate People",
+          "costar": "Daniel Craig"
+        },
+        {
+          "film": "Spielberg",
+          "costar": "Daniel Day-Lewis"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-18",
+      "startingActor": "Daniel Craig",
+      "endingActor": "Jennifer Connelly",
+      "idealPath": [
+        {
+          "film": "A Kid in King Arthur's Court",
+          "costar": "Kate Winslet"
+        },
+        {
+          "film": "Little Children",
+          "costar": "Jennifer Connelly"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-19",
+      "startingActor": "Vanessa Kirby",
+      "endingActor": "John Rhys-Davies",
+      "idealPath": [
+        {
+          "film": "Charlie Countryman",
+          "costar": "Evan Rachel Wood"
+        },
+        {
+          "film": "Shark Bait (2006)",
+          "costar": "John Rhys-Davies"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-20",
+      "startingActor": "Amy Adams",
+      "endingActor": "Matthew Broderick",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Colleen Camp"
+        },
+        {
+          "film": "Election (1999)",
+          "costar": "Matthew Broderick"
+        }
+      ]
     }
   ]
 }
