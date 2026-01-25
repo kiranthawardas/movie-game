@@ -1423,6 +1423,86 @@
           "costar": "Matthew Broderick"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-25",
+      "startingActor": "Nathan Fillion",
+      "endingActor": "Kristen Bell",
+      "idealPath": [
+        {
+          "film": "Blast from the Past",
+          "costar": "Harry S. Murphy"
+        },
+        {
+          "film": "Reefer Madness: The Movie Musical",
+          "costar": "Kristen Bell"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-26",
+      "startingActor": "Guillermo del Toro",
+      "endingActor": "Peter Dinklage",
+      "idealPath": [
+        {
+          "film": "Comic-Con Episode IV: A Fan's Hope",
+          "costar": "Kenneth Branagh"
+        },
+        {
+          "film": "Avengers: Infinity War",
+          "costar": "Peter Dinklage"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-27",
+      "startingActor": "Edward Norton",
+      "endingActor": "Alicia Vikander",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Misha Kuznetsov"
+        },
+        {
+          "film": "The Man from U.N.C.L.E.",
+          "costar": "Alicia Vikander"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-28",
+      "startingActor": "Richard Dreyfuss",
+      "endingActor": "Amy Adams",
+      "idealPath": [
+        {
+          "film": "Always (1989)",
+          "costar": "Holly Hunter"
+        },
+        {
+          "film": "Batman v Superman: Dawn of Justice",
+          "costar": "Amy Adams"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-01-29",
+      "startingActor": "Jackie Chan",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "An Alan Smithee Film: Burn, Hollywood, Burn",
+          "costar": "Dina Spybey-Waters"
+        },
+        {
+          "film": "Full Frontal",
+          "costar": "Brad Pitt"
+        }
+      ]
     }
   ]
 }
