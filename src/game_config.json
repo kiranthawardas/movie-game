@@ -1503,6 +1503,2058 @@
           "costar": "Brad Pitt"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-03",
+      "startingActor": "Peter Dinklage",
+      "endingActor": "Natalia Dyer",
+      "idealPath": [
+        {
+          "film": "Brothers (2024)",
+          "costar": "Matt Lewis"
+        },
+        {
+          "film": "Yes, God, Yes",
+          "costar": "Natalia Dyer"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-04",
+      "startingActor": "Christian Bale",
+      "endingActor": "Ben Affleck",
+      "idealPath": [
+        {
+          "film": "3:10 to Yuma (2007)",
+          "costar": "Kevin Durand"
+        },
+        {
+          "film": "Smokin' Aces",
+          "costar": "Ben Affleck"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-05",
+      "startingActor": "Nicolas Cage",
+      "endingActor": "Marlon Brando",
+      "idealPath": [
+        {
+          "film": "Adaptation.",
+          "costar": "Gary Farmer"
+        },
+        {
+          "film": "The Score",
+          "costar": "Marlon Brando"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-06",
+      "startingActor": "Kajol",
+      "endingActor": "Heath Ledger",
+      "idealPath": [
+        {
+          "film": "Baazigar",
+          "costar": "Dalip Tahil"
+        },
+        {
+          "film": "Gandhi",
+          "costar": "Colin Farrell"
+        },
+        {
+          "film": "The Imaginarium of Doctor Parnassus",
+          "costar": "Heath Ledger"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-07",
+      "startingActor": "Emma Stone",
+      "endingActor": "Christian Bale",
+      "idealPath": [
+        {
+          "film": "Aloha",
+          "costar": "Bill Camp"
+        },
+        {
+          "film": "Hostiles",
+          "costar": "Christian Bale"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-08",
+      "startingActor": "John Travolta",
+      "endingActor": "Daisy Ridley",
+      "idealPath": [
+        {
+          "film": "A Civil Action",
+          "costar": "John Lithgow"
+        },
+        {
+          "film": "The Bubble",
+          "costar": "Daisy Ridley"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-09",
+      "startingActor": "Cate Blanchett",
+      "endingActor": "Scarlett Johansson",
+      "idealPath": [
+        {
+          "film": "An Ideal Husband",
+          "costar": "Julianne Moore"
+        },
+        {
+          "film": "Don Jon",
+          "costar": "Scarlett Johansson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-10",
+      "startingActor": "Christopher Walken",
+      "endingActor": "Evangeline Lilly",
+      "idealPath": [
+        {
+          "film": "Balls of Fury",
+          "costar": "Terry Crews"
+        },
+        {
+          "film": "White Chicks",
+          "costar": "Evangeline Lilly"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-11",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Rooney Mara",
+      "idealPath": [
+        {
+          "film": "American Gangster",
+          "costar": "Cedric Sanders"
+        },
+        {
+          "film": "The Social Network",
+          "costar": "Rooney Mara"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-12",
+      "startingActor": "Jude Law",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "A.I. Artificial Intelligence",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-13",
+      "startingActor": "Cate Blanchett",
+      "endingActor": "Kevin Costner",
+      "idealPath": [
+        {
+          "film": "Babel",
+          "costar": "R. D. Call"
+        },
+        {
+          "film": "Waterworld",
+          "costar": "Kevin Costner"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-15",
+      "startingActor": "Martin Scorsese",
+      "endingActor": "Maggie Gyllenhaal",
+      "idealPath": [
+        {
+          "film": "After Hours",
+          "costar": "Catherine O'Hara"
+        },
+        {
+          "film": "Away We Go",
+          "costar": "Maggie Gyllenhaal"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-16",
+      "startingActor": "Sidney Poitier",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "Edge of the City",
+          "costar": "David Clarke"
+        },
+        {
+          "film": "Cutting Class",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-17",
+      "startingActor": "Shah Rukh Khan",
+      "endingActor": "Tom Cruise",
+      "idealPath": [
+        {
+          "film": "Ae Dil Hai Mushkil",
+          "costar": "Hiten Patel"
+        },
+        {
+          "film": "Mission: Impossible - Fallout",
+          "costar": "Tom Cruise"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-18",
+      "startingActor": "Vin Diesel",
+      "endingActor": "Christopher Walken",
+      "idealPath": [
+        {
+          "film": "A Man Apart",
+          "costar": "Jim Boeke"
+        },
+        {
+          "film": "Pennies from Heaven",
+          "costar": "Christopher Walken"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-21",
+      "startingActor": "Johnny Depp",
+      "endingActor": "Jennifer Lawrence",
+      "idealPath": [
+        {
+          "film": "21 Jump Street",
+          "costar": "Joe Chrest"
+        },
+        {
+          "film": "The Hunger Games: Mockingjay - Part 2",
+          "costar": "Jennifer Lawrence"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-22",
+      "startingActor": "Patrick Swayze",
+      "endingActor": "Natalia Dyer",
+      "idealPath": [
+        {
+          "film": "Donnie Darko",
+          "costar": "Jake Gyllenhaal"
+        },
+        {
+          "film": "Velvet Buzzsaw",
+          "costar": "Natalia Dyer"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-23",
+      "startingActor": "Sacha Baron Cohen",
+      "endingActor": "Daniel Day-Lewis",
+      "idealPath": [
+        {
+          "film": "Ali G Indahouse",
+          "costar": "Richard Syms"
+        },
+        {
+          "film": "Gangs of New York",
+          "costar": "Daniel Day-Lewis"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-24",
+      "startingActor": "Elizabeth Banks",
+      "endingActor": "Matt Damon",
+      "idealPath": [
+        {
+          "film": "Call Jane",
+          "costar": "Chris Messina"
+        },
+        {
+          "film": "Air",
+          "costar": "Matt Damon"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-25",
+      "startingActor": "Finn Wolfhard",
+      "endingActor": "Hilary Swank",
+      "idealPath": [
+        {
+          "film": "Ghostbusters: Afterlife",
+          "costar": "Bob Gunton"
+        },
+        {
+          "film": "Iron Jawed Angels",
+          "costar": "Hilary Swank"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-26",
+      "startingActor": "Naomi Watts",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "21 Grams",
+          "costar": "Annie Corley"
+        },
+        {
+          "film": "The Bridges of Madison County",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-27",
+      "startingActor": "Jeff Bridges",
+      "endingActor": "Kristen Bell",
+      "idealPath": [
+        {
+          "film": "8 Million Ways to Die",
+          "costar": "Tommy Lister Jr."
+        },
+        {
+          "film": "Zootopia",
+          "costar": "Kristen Bell"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-02-28",
+      "startingActor": "Jason Isaacs",
+      "endingActor": "Sydney Sweeney",
+      "idealPath": [
+        {
+          "film": "A Cure for Wellness",
+          "costar": "Johnny Otto"
+        },
+        {
+          "film": "Once Upon a Time... in Hollywood",
+          "costar": "Sydney Sweeney"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-01",
+      "startingActor": "Ian McKellen",
+      "endingActor": "Sally Hawkins",
+      "idealPath": [
+        {
+          "film": "All Is True",
+          "costar": "Hamish McColl"
+        },
+        {
+          "film": "Paddington",
+          "costar": "Sally Hawkins"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-06",
+      "startingActor": "Matthew Macfadyen",
+      "endingActor": "Scarlett Johansson",
+      "idealPath": [
+        {
+          "film": "Anna Karenina",
+          "costar": "Aaron Taylor-Johnson"
+        },
+        {
+          "film": "Avengers: Age of Ultron",
+          "costar": "Scarlett Johansson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-07",
+      "startingActor": "Glen Powell",
+      "endingActor": "Finn Wolfhard",
+      "idealPath": [
+        {
+          "film": "Sand Castle",
+          "costar": "Logan Marshall-Green"
+        },
+        {
+          "film": "How It Ends",
+          "costar": "Finn Wolfhard"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-08",
+      "startingActor": "Pedro Pascal",
+      "endingActor": "Teyana Taylor",
+      "idealPath": [
+        {
+          "film": "Eddington",
+          "costar": "Micheal Ward"
+        },
+        {
+          "film": "The Book of Clarence",
+          "costar": "Teyana Taylor"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-09",
+      "startingActor": "Cillian Murphy",
+      "endingActor": "Keanu Reeves",
+      "idealPath": [
+        {
+          "film": "28 Days Later",
+          "costar": "Naomie Harris"
+        },
+        {
+          "film": "Street Kings",
+          "costar": "Keanu Reeves"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-10",
+      "startingActor": "Daniel Day-Lewis",
+      "endingActor": "Julia Roberts",
+      "idealPath": [
+        {
+          "film": "A Room with a View",
+          "costar": "Maggie Smith"
+        },
+        {
+          "film": "Hook",
+          "costar": "Julia Roberts"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-11",
+      "startingActor": "Kevin Costner",
+      "endingActor": "Denzel Washington",
+      "idealPath": [
+        {
+          "film": "3 Days to Kill",
+          "costar": "Connie Nielsen"
+        },
+        {
+          "film": "Gladiator II",
+          "costar": "Denzel Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-12",
+      "startingActor": "Mckenna Grace",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "Amityville: The Awakening",
+          "costar": "Jennifer Morrison"
+        },
+        {
+          "film": "Mr. & Mrs. Smith (2005)",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-13",
+      "startingActor": "Tyler Perry",
+      "endingActor": "Cillian Murphy",
+      "idealPath": [
+        {
+          "film": "Adele One Night Only",
+          "costar": "Leonardo DiCaprio"
+        },
+        {
+          "film": "Inception",
+          "costar": "Cillian Murphy"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-14",
+      "startingActor": "Mel Gibson",
+      "endingActor": "Emily Blunt",
+      "idealPath": [
+        {
+          "film": "Air America",
+          "costar": "David Marshall Grant"
+        },
+        {
+          "film": "The Devil Wears Prada",
+          "costar": "Emily Blunt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-15",
+      "startingActor": "Peter Cushing",
+      "endingActor": "Maggie Smith",
+      "idealPath": [
+        {
+          "film": "Alexander the Great",
+          "costar": "Claire Bloom"
+        },
+        {
+          "film": "Clash of the Titans (1981)",
+          "costar": "Maggie Smith"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-16",
+      "startingActor": "Philip Seymour Hoffman",
+      "endingActor": "Quentin Tarantino",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Al Palagonia"
+        },
+        {
+          "film": "Girl 6",
+          "costar": "Quentin Tarantino"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-03-17",
+      "startingActor": "Jeff Bridges",
+      "endingActor": "Mira Nair",
+      "idealPath": [
+        {
+          "film": "8 Million Ways to Die",
+          "costar": "Rosanna Arquette"
+        },
+        {
+          "film": "Silverado",
+          "costar": "Joe Seneca"
+        },
+        {
+          "film": "Mississippi Masala",
+          "costar": "Mira Nair"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-03",
+      "startingActor": "Leonardo DiCaprio",
+      "endingActor": "Jennifer Aniston",
+      "idealPath": [
+        {
+          "film": "Adele One Night Only",
+          "costar": "James Corden"
+        },
+        {
+          "film": "Friends: The Reunion",
+          "costar": "Jennifer Aniston"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-04",
+      "startingActor": "Kristen Bell",
+      "endingActor": "Christopher Walken",
+      "idealPath": [
+        {
+          "film": "A Bad Moms Christmas",
+          "costar": "Cheryl Hines"
+        },
+        {
+          "film": "Nine Lives",
+          "costar": "Christopher Walken"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-05",
+      "startingActor": "Terrence Howard",
+      "endingActor": "Frank Langella",
+      "idealPath": [
+        {
+          "film": "Angel Eyes",
+          "costar": "Jeremy Sisto"
+        },
+        {
+          "film": "Robot & Frank",
+          "costar": "Frank Langella"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-06",
+      "startingActor": "Nathan Fillion",
+      "endingActor": "Mason Thames",
+      "idealPath": [
+        {
+          "film": "Cars 3",
+          "costar": "Madeleine McGraw"
+        },
+        {
+          "film": "The Black Phone",
+          "costar": "Mason Thames"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-07",
+      "startingActor": "Paul Muni",
+      "endingActor": "Dakota Fanning",
+      "idealPath": [
+        {
+          "film": "Scarface",
+          "costar": "Jack Perry"
+        },
+        {
+          "film": "Once Upon a Time... in Hollywood",
+          "costar": "Dakota Fanning"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-08",
+      "startingActor": "Omar Sharif",
+      "endingActor": "Ed Harris",
+      "idealPath": [
+        {
+          "film": "Funny Lady",
+          "costar": "Alana Stewart"
+        },
+        {
+          "film": "Swing Shift",
+          "costar": "Ed Harris"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-09",
+      "startingActor": "Willem Dafoe",
+      "endingActor": "Michael Fassbender",
+      "idealPath": [
+        {
+          "film": "A Family Man",
+          "costar": "Gerard Butler"
+        },
+        {
+          "film": "300",
+          "costar": "Michael Fassbender"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-10",
+      "startingActor": "Jodie Foster",
+      "endingActor": "Al Pacino",
+      "idealPath": [
+        {
+          "film": "Alice Doesn't Live Here Anymore",
+          "costar": "Harvey Keitel"
+        },
+        {
+          "film": "The Irishman",
+          "costar": "Al Pacino"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-11",
+      "startingActor": "Katrina Kaif",
+      "endingActor": "Carrie Fisher",
+      "idealPath": [
+        {
+          "film": "Bombay Talkies",
+          "costar": "Akshay Kumar"
+        },
+        {
+          "film": "Star Wars: The Last Jedi",
+          "costar": "Carrie Fisher"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-12",
+      "startingActor": "Jack Nicholson",
+      "endingActor": "Elijah Wood",
+      "idealPath": [
+        {
+          "film": "A Few Good Men",
+          "costar": "Demi Moore"
+        },
+        {
+          "film": "Bobby",
+          "costar": "Elijah Wood"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-13",
+      "startingActor": "Julia Roberts",
+      "endingActor": "Gary Oldman",
+      "idealPath": [
+        {
+          "film": "America's Sweethearts",
+          "costar": "Christopher Walken"
+        },
+        {
+          "film": "Basquiat",
+          "costar": "Gary Oldman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-14",
+      "startingActor": "Brian Cox",
+      "endingActor": "Mira Nair",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Al Palagonia"
+        },
+        {
+          "film": "Girl 6",
+          "costar": "Ranjit Chowdhry"
+        },
+        {
+          "film": "Mississippi Masala",
+          "costar": "Mira Nair"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-15",
+      "startingActor": "Quentin Tarantino",
+      "endingActor": "Michael Caine",
+      "idealPath": [
+        {
+          "film": "Corman's World",
+          "costar": "Eric Balfour"
+        },
+        {
+          "film": "Secondhand Lions",
+          "costar": "Michael Caine"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-16",
+      "startingActor": "Tom Hardy",
+      "endingActor": "Danny Glover",
+      "idealPath": [
+        {
+          "film": "Black Hawk Down",
+          "costar": "Orlando Bloom"
+        },
+        {
+          "film": "Tour de Pharmacy",
+          "costar": "Danny Glover"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-17",
+      "startingActor": "Dustin Hoffman",
+      "endingActor": "Octavia Spencer",
+      "idealPath": [
+        {
+          "film": "Barney's Version",
+          "costar": "Arthur Holden"
+        },
+        {
+          "film": "Bad Santa 2",
+          "costar": "Octavia Spencer"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-22",
+      "startingActor": "Kristen Bell",
+      "endingActor": "George Clooney",
+      "idealPath": [
+        {
+          "film": "A Bad Moms Christmas",
+          "costar": "Kathryn Hahn"
+        },
+        {
+          "film": "Tomorrowland",
+          "costar": "George Clooney"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-23",
+      "startingActor": "Clint Eastwood",
+      "endingActor": "James Franco",
+      "idealPath": [
+        {
+          "film": "A Perfect World",
+          "costar": "Bradley Whitford"
+        },
+        {
+          "film": "An American Crime",
+          "costar": "James Franco"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-24",
+      "startingActor": "Cate Blanchett",
+      "endingActor": "Jeremy Irons",
+      "idealPath": [
+        {
+          "film": "An Ideal Husband",
+          "costar": "Jeremy Northam"
+        },
+        {
+          "film": "The Man Who Knew Infinity",
+          "costar": "Jeremy Irons"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-25",
+      "startingActor": "Clark Gable",
+      "endingActor": "Keanu Reeves",
+      "idealPath": [
+        {
+          "film": "La Classe américaine",
+          "costar": "Angie Dickinson"
+        },
+        {
+          "film": "Even Cowgirls Get the Blues",
+          "costar": "Keanu Reeves"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-26",
+      "startingActor": "Natalia Dyer",
+      "endingActor": "Glen Powell",
+      "idealPath": [
+        {
+          "film": "Hannah Montana: The Movie",
+          "costar": "Emily Osment"
+        },
+        {
+          "film": "Spy Kids 3-D: Game Over",
+          "costar": "Glen Powell"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-27",
+      "startingActor": "Shah Rukh Khan",
+      "endingActor": "Alec Guinness",
+      "idealPath": [
+        {
+          "film": "Devdas",
+          "costar": "Dina Pathak"
+        },
+        {
+          "film": "A Passage to India",
+          "costar": "Alec Guinness"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-28",
+      "startingActor": "Jack Lemmon",
+      "endingActor": "Naomi Watts",
+      "idealPath": [
+        {
+          "film": "12 Angry Men",
+          "costar": "Armin Mueller-Stahl"
+        },
+        {
+          "film": "Eastern Promises",
+          "costar": "Naomi Watts"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-29",
+      "startingActor": "Michelle Pfeiffer",
+      "endingActor": "Jennifer Connelly",
+      "idealPath": [
+        {
+          "film": "A Midsummer Night's Dream",
+          "costar": "David Strathairn"
+        },
+        {
+          "film": "American Pastoral",
+          "costar": "Jennifer Connelly"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-04-30",
+      "startingActor": "Julianne Moore",
+      "endingActor": "John Hurt",
+      "idealPath": [
+        {
+          "film": "6 Souls",
+          "costar": "James Howard"
+        },
+        {
+          "film": "The Oxford Murders",
+          "costar": "John Hurt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "startingActor": "Hailee Steinfeld",
+      "endingActor": "Tom Cruise",
+      "idealPath": [
+        {
+          "film": "3 Days to Kill",
+          "costar": "Raymond J. Barry"
+        },
+        {
+          "film": "Born on the Fourth of July",
+          "costar": "Tom Cruise"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-02",
+      "startingActor": "Mia Farrow",
+      "endingActor": "Billy Crystal",
+      "idealPath": [
+        {
+          "film": "A Midsummer Night's Sex Comedy",
+          "costar": "Woody Allen"
+        },
+        {
+          "film": "Deconstructing Harry",
+          "costar": "Billy Crystal"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-03",
+      "startingActor": "Robert Pattinson",
+      "endingActor": "Martin Sheen",
+      "idealPath": [
+        {
+          "film": "Cosmopolis",
+          "costar": "Paul Giamatti"
+        },
+        {
+          "film": "The Amazing Spider-Man 2",
+          "costar": "Martin Sheen"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-04",
+      "startingActor": "Vanessa Kirby",
+      "endingActor": "Martin Scorsese",
+      "idealPath": [
+        {
+          "film": "About Time",
+          "costar": "Margot Robbie"
+        },
+        {
+          "film": "The Wolf of Wall Street",
+          "costar": "Martin Scorsese"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-06",
+      "startingActor": "Emma Watson",
+      "endingActor": "Cameron Diaz",
+      "idealPath": [
+        {
+          "film": "Beauty and the Beast",
+          "costar": "Ewan McGregor"
+        },
+        {
+          "film": "A Life Less Ordinary",
+          "costar": "Cameron Diaz"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-07",
+      "startingActor": "Andy Serkis",
+      "endingActor": "Perry Mattfeld",
+      "idealPath": [
+        {
+          "film": "Venom: The Last Dance",
+          "costar": "Reid Scott"
+        },
+        {
+          "film": "The Idea of You",
+          "costar": "Perry Mattfeld"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-08",
+      "startingActor": "Maggie Smith",
+      "endingActor": "Leonardo DiCaprio",
+      "idealPath": [
+        {
+          "film": "A Boy Called Christmas",
+          "costar": "Jim Broadbent"
+        },
+        {
+          "film": "Gangs of New York",
+          "costar": "Leonardo DiCaprio"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-09",
+      "startingActor": "Michael J. Fox",
+      "endingActor": "Karl Urban",
+      "idealPath": [
+        {
+          "film": "Atlantis: The Lost Empire",
+          "costar": "Leonard Nimoy"
+        },
+        {
+          "film": "For the Love of Spock",
+          "costar": "Karl Urban"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-10",
+      "startingActor": "Russell Crowe",
+      "endingActor": "Marlene Dietrich",
+      "idealPath": [
+        {
+          "film": "L.A. Confidential",
+          "costar": "Don Pulford"
+        },
+        {
+          "film": "Around the World in Eighty Days",
+          "costar": "Marlene Dietrich"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-11",
+      "startingActor": "Eva Green",
+      "endingActor": "Keanu Reeves",
+      "idealPath": [
+        {
+          "film": "300: Rise of an Empire",
+          "costar": "George Georgiou"
+        },
+        {
+          "film": "John Wick: Chapter 4",
+          "costar": "Keanu Reeves"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-12",
+      "startingActor": "Millie Bobby Brown",
+      "endingActor": "Nicole Kidman",
+      "idealPath": [
+        {
+          "film": "Damsel",
+          "costar": "Ray Winstone"
+        },
+        {
+          "film": "Cold Mountain",
+          "costar": "Nicole Kidman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-13",
+      "startingActor": "Benedict Cumberbatch",
+      "endingActor": "Rodrigo Santoro",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Chiwetel Ejiofor"
+        },
+        {
+          "film": "Love Actually",
+          "costar": "Rodrigo Santoro"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-14",
+      "startingActor": "Tom Cruise",
+      "endingActor": "Pauline Collins",
+      "idealPath": [
+        {
+          "film": "Austin Powers in Goldmember",
+          "costar": "Jim Piddock"
+        },
+        {
+          "film": "You Will Meet a Tall Dark Stranger",
+          "costar": "Pauline Collins"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-15",
+      "startingActor": "David Harbour",
+      "endingActor": "Sean Bean",
+      "idealPath": [
+        {
+          "film": "A Working Man",
+          "costar": "Michael Peña"
+        },
+        {
+          "film": "The Martian",
+          "costar": "Sean Bean"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-16",
+      "startingActor": "Val Kilmer",
+      "endingActor": "Sidney Poitier",
+      "idealPath": [
+        {
+          "film": "Batman Forever",
+          "costar": "George Cheung"
+        },
+        {
+          "film": "Sneakers",
+          "costar": "Sidney Poitier"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-17",
+      "startingActor": "Maggie Smith",
+      "endingActor": "Cameron Diaz",
+      "idealPath": [
+        {
+          "film": "A Boy Called Christmas",
+          "costar": "Jim Broadbent"
+        },
+        {
+          "film": "Gangs of New York",
+          "costar": "Cameron Diaz"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-18",
+      "startingActor": "Alyson Hannigan",
+      "endingActor": "Ken Watanabe",
+      "idealPath": [
+        {
+          "film": "Boys and Girls",
+          "costar": "Diane Mizota"
+        },
+        {
+          "film": "Memoirs of a Geisha",
+          "costar": "Ken Watanabe"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-05-19",
+      "startingActor": "Morgan Freeman",
+      "endingActor": "Tilda Swinton",
+      "idealPath": [
+        {
+          "film": "10 Items or Less",
+          "costar": "Jonah Hill"
+        },
+        {
+          "film": "Hail, Caesar!",
+          "costar": "Tilda Swinton"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "date": "2026-05-22",
+      "startingActor": "Tobey Maguire",
+      "endingActor": "Liam Neeson",
+      "idealPath": [
+        {
+          "film": "Babylon",
+          "costar": "E.E. Bell"
+        },
+        {
+          "film": "The Ballad of Buster Scruggs",
+          "costar": "Liam Neeson"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "date": "2026-05-23",
+      "startingActor": "Tobey Maguire",
+      "endingActor": "Will Smith",
+      "idealPath": [
+        {
+          "film": "Babylon",
+          "costar": "Margot Robbie"
+        },
+        {
+          "film": "Focus",
+          "costar": "Will Smith"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "date": "2026-05-24",
+      "startingActor": "Eddie Murphy",
+      "endingActor": "Daniel Craig",
+      "idealPath": [
+        {
+          "film": "A Thousand Words",
+          "costar": "Edi Patterson"
+        },
+        {
+          "film": "Knives Out",
+          "costar": "Daniel Craig"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "date": "2026-05-25",
+      "startingActor": "Eddie Murphy",
+      "endingActor": "Anthony Hopkins",
+      "idealPath": [
+        {
+          "film": "48 Hrs.",
+          "costar": "Jonathan Banks"
+        },
+        {
+          "film": "Freejack",
+          "costar": "Anthony Hopkins"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "date": "2026-05-26",
+      "startingActor": "Andrew Garfield",
+      "endingActor": "Chris Evans",
+      "idealPath": [
+        {
+          "film": "99 Homes",
+          "costar": "Donna DuPlantier"
+        },
+        {
+          "film": "Pain Hustlers",
+          "costar": "Chris Evans"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "date": "2026-05-27",
+      "startingActor": "Grace Kelly",
+      "endingActor": "Halle Berry",
+      "idealPath": [
+        {
+          "film": "Dial M for Murder",
+          "costar": "Alfred Hitchcock"
+        },
+        {
+          "film": "Innocent Blood",
+          "costar": "Kim Coates"
+        },
+        {
+          "film": "The Last Boy Scout",
+          "costar": "Halle Berry"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "date": "2026-05-28",
+      "startingActor": "Tobey Maguire",
+      "endingActor": "Arnold Schwarzenegger",
+      "idealPath": [
+        {
+          "film": "Babylon",
+          "costar": "Eric Roberts"
+        },
+        {
+          "film": "The Expendables",
+          "costar": "Arnold Schwarzenegger"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "date": "2026-05-29",
+      "startingActor": "Clark Gable",
+      "endingActor": "Steve McQueen",
+      "idealPath": [
+        {
+          "film": "Boom Town",
+          "costar": "Bert Stevens"
+        },
+        {
+          "film": "Somebody Up There Likes Me",
+          "costar": "Steve McQueen"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "date": "2026-05-30",
+      "startingActor": "Robert Redford",
+      "endingActor": "Elizabeth Taylor",
+      "idealPath": [
+        {
+          "film": "A Bridge Too Far",
+          "costar": "Edward Fox"
+        },
+        {
+          "film": "The Mirror Crack'd",
+          "costar": "Elizabeth Taylor"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "date": "2026-05-31",
+      "startingActor": "Will Smith",
+      "endingActor": "Sandra Bullock",
+      "idealPath": [
+        {
+          "film": "Aladdin",
+          "costar": "Alan Tudyk"
+        },
+        {
+          "film": "28 Days",
+          "costar": "Sandra Bullock"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "date": "2026-06-01",
+      "startingActor": "Katharine Hepburn",
+      "endingActor": "Patrick Stewart",
+      "idealPath": [
+        {
+          "film": "Long Day's Journey Into Night",
+          "costar": "Dean Stockwell"
+        },
+        {
+          "film": "Dune (1984)",
+          "costar": "Patrick Stewart"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "date": "2026-06-02",
+      "startingActor": "Matthew McConaughey",
+      "endingActor": "Maggie Smith",
+      "idealPath": [
+        {
+          "film": "A Time to Kill",
+          "costar": "Ashley Judd"
+        },
+        {
+          "film": "Divine Secrets of the Ya-Ya Sisterhood",
+          "costar": "Maggie Smith"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "date": "2026-06-03",
+      "startingActor": "Ian McKellen",
+      "endingActor": "Daniel Day-Lewis",
+      "idealPath": [
+        {
+          "film": "All Is True",
+          "costar": "Gerard Horan"
+        },
+        {
+          "film": "My Beautiful Laundrette",
+          "costar": "Daniel Day-Lewis"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "date": "2026-06-04",
+      "startingActor": "Sharon Stone",
+      "endingActor": "Ryan Reynolds",
+      "idealPath": [
+        {
+          "film": "$5 a Day",
+          "costar": "Christopher Hagen"
+        },
+        {
+          "film": "A Million Ways to Die in the West",
+          "costar": "Ryan Reynolds"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "date": "2026-06-05",
+      "startingActor": "John Travolta",
+      "endingActor": "Christian Bale",
+      "idealPath": [
+        {
+          "film": "A Civil Action",
+          "costar": "Alan Wilder"
+        },
+        {
+          "film": "Public Enemies",
+          "costar": "Christian Bale"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "date": "2026-06-06",
+      "startingActor": "Katharine Hepburn",
+      "endingActor": "Sean Connery",
+      "idealPath": [
+        {
+          "film": "Adam's Rib",
+          "costar": "Bert Stevens"
+        },
+        {
+          "film": "Marnie",
+          "costar": "Sean Connery"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "date": "2026-06-07",
+      "startingActor": "Michael Caine",
+      "endingActor": "Jennifer Aniston",
+      "idealPath": [
+        {
+          "film": "A Bridge Too Far",
+          "costar": "Colin Farrell"
+        },
+        {
+          "film": "Horrible Bosses",
+          "costar": "Jennifer Aniston"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "date": "2026-06-08",
+      "startingActor": "Natalie Portman",
+      "endingActor": "Sean Connery",
+      "idealPath": [
+        {
+          "film": "Annihilation",
+          "costar": "Jennifer Jason Leigh"
+        },
+        {
+          "film": "Wrong Is Right",
+          "costar": "Sean Connery"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "date": "2026-06-09",
+      "startingActor": "Humphrey Bogart",
+      "endingActor": "Marlon Brando",
+      "idealPath": [
+        {
+          "film": "Across the Pacific",
+          "costar": "John Hamilton"
+        },
+        {
+          "film": "The Men",
+          "costar": "Marlon Brando"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "date": "2026-06-10",
+      "startingActor": "Sidney Poitier",
+      "endingActor": "Pierce Brosnan",
+      "idealPath": [
+        {
+          "film": "Blackboard Jungle",
+          "costar": "Paul Mazursky"
+        },
+        {
+          "film": "Love Affair",
+          "costar": "Pierce Brosnan"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "date": "2026-06-11",
+      "startingActor": "Scarlett Johansson",
+      "endingActor": "Halle Berry",
+      "idealPath": [
+        {
+          "film": "A Good Woman",
+          "costar": "Stephen Campbell Moore"
+        },
+        {
+          "film": "The Union",
+          "costar": "Halle Berry"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "date": "2026-06-12",
+      "startingActor": "Mila Kunis",
+      "endingActor": "Robert De Niro",
+      "idealPath": [
+        {
+          "film": "A Bad Moms Christmas",
+          "costar": "Susan Sarandon"
+        },
+        {
+          "film": "The Big Wedding",
+          "costar": "Robert De Niro"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "date": "2026-06-13",
+      "startingActor": "Chris Pratt",
+      "endingActor": "Adam Sandler",
+      "idealPath": [
+        {
+          "film": "10 Years",
+          "costar": "Alex Knight"
+        },
+        {
+          "film": "The Ridiculous 6",
+          "costar": "Adam Sandler"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "date": "2026-06-14",
+      "startingActor": "Clark Gable",
+      "endingActor": "Emma Watson",
+      "idealPath": [
+        {
+          "film": "La Classe américaine",
+          "costar": "Dustin Hoffman"
+        },
+        {
+          "film": "The Tale of Despereaux",
+          "costar": "Emma Watson"
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "date": "2026-06-15",
+      "startingActor": "Meryl Streep",
+      "endingActor": "Susan Sarandon",
+      "idealPath": [
+        {
+          "film": "A Prairie Home Companion",
+          "costar": "Joel Thingvall"
+        },
+        {
+          "film": "Peacock",
+          "costar": "Susan Sarandon"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "date": "2026-06-16",
+      "startingActor": "Cate Blanchett",
+      "endingActor": "Robert Duvall",
+      "idealPath": [
+        {
+          "film": "Babel",
+          "costar": "Adriana Barraza"
+        },
+        {
+          "film": "Wild Horses",
+          "costar": "Robert Duvall"
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "date": "2026-06-17",
+      "startingActor": "Liam Neeson",
+      "endingActor": "Kenneth Branagh",
+      "idealPath": [
+        {
+          "film": "A Million Ways to Die in the West",
+          "costar": "Brett Rickaby"
+        },
+        {
+          "film": "How to Kill Your Neighbor's Dog",
+          "costar": "Kenneth Branagh"
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "date": "2026-06-18",
+      "startingActor": "Jeff Bridges",
+      "endingActor": "Will Smith",
+      "idealPath": [
+        {
+          "film": "A Dog Year",
+          "costar": "Ptolemy Slocum"
+        },
+        {
+          "film": "Hitch",
+          "costar": "Will Smith"
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "date": "2026-06-19",
+      "startingActor": "Andrew Garfield",
+      "endingActor": "Will Smith",
+      "idealPath": [
+        {
+          "film": "99 Homes",
+          "costar": "Jayson Warner Smith"
+        },
+        {
+          "film": "Anchorman 2: The Legend Continues",
+          "costar": "Will Smith"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "date": "2026-06-20",
+      "startingActor": "Sally Field",
+      "endingActor": "Mila Kunis",
+      "idealPath": [
+        {
+          "film": "80 for Brady",
+          "costar": "Lily Tomlin"
+        },
+        {
+          "film": "Krippendorf's Tribe",
+          "costar": "Mila Kunis"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-06-26",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Hugh Jackman",
+      "idealPath": [
+        {
+          "film": "2 Guns",
+          "costar": "Doris Morgado"
+        },
+        {
+          "film": "Logan",
+          "costar": "Hugh Jackman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-06-27",
+      "startingActor": "Varun Dhawan",
+      "endingActor": "Brie Larson",
+      "idealPath": [
+        {
+          "film": "ABCD 2",
+          "costar": "Lauren Gottlieb"
+        },
+        {
+          "film": "Alvin and the Chipmunks: Chipwrecked",
+          "costar": "Jenny Slate"
+        },
+        {
+          "film": "Digging for Fire",
+          "costar": "Brie Larson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-06-28",
+      "startingActor": "Oscar Isaac",
+      "endingActor": "Keanu Reeves",
+      "idealPath": [
+        {
+          "film": "10 Years",
+          "costar": "Ivan Martin"
+        },
+        {
+          "film": "Generation Um...",
+          "costar": "Keanu Reeves"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-06-29",
+      "startingActor": "Anthony Hopkins",
+      "endingActor": "Johnny Depp",
+      "idealPath": [
+        {
+          "film": "360",
+          "costar": "Gerard Monaco"
+        },
+        {
+          "film": "Pirates of the Caribbean: On Stranger Tides",
+          "costar": "Johnny Depp"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-06-30",
+      "startingActor": "Philip Seymour Hoffman",
+      "endingActor": "Mark Ruffalo",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Anna Paquin"
+        },
+        {
+          "film": "Margaret",
+          "costar": "Mark Ruffalo"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-01",
+      "startingActor": "Ranveer Singh",
+      "endingActor": "Denzel Washington",
+      "idealPath": [
+        {
+          "film": "83",
+          "costar": "Adam Brown"
+        },
+        {
+          "film": "Monster (2003)",
+          "costar": "Annie Corley"
+        },
+        {
+          "film": "Malcolm X",
+          "costar": "Denzel Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-02",
+      "startingActor": "Anne Hathaway",
+      "endingActor": "Amitabh Bachchan",
+      "idealPath": [
+        {
+          "film": "Serenity",
+          "costar": "Jason Clarke"
+        },
+        {
+          "film": "The Great Gatsby",
+          "costar": "Amitabh Bachchan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-03",
+      "startingActor": "Lupita Nyong'o",
+      "endingActor": "Will Smith",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Benedict Cumberbatch"
+        },
+        {
+          "film": "The Roses",
+          "costar": "Will Smith"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-04",
+      "startingActor": "Salman Khan",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "Bharat",
+          "costar": "Christian Mandel"
+        },
+        {
+          "film": "War Machine",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-05",
+      "startingActor": "Julia Roberts",
+      "endingActor": "Zendaya",
+      "idealPath": [
+        {
+          "film": "America's Sweethearts",
+          "costar": "Christopher Walken"
+        },
+        {
+          "film": "Dune: Part Two",
+          "costar": "Zendaya"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-06",
+      "startingActor": "Ethan Hawke",
+      "endingActor": "Ranbir Kapoor",
+      "idealPath": [
+        {
+          "film": "Brooklyn's Finest",
+          "costar": "Sarah Thompson"
+        },
+        {
+          "film": "Raajneeti",
+          "costar": "Ranbir Kapoor"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-07",
+      "startingActor": "Casey Affleck",
+      "endingActor": "Tom Hanks",
+      "idealPath": [
+        {
+          "film": "200 Cigarettes",
+          "costar": "Ben Affleck"
+        },
+        {
+          "film": "Halftime",
+          "costar": "Tom Hanks"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-08",
+      "startingActor": "Austin Butler",
+      "endingActor": "Kerry Washington",
+      "idealPath": [
+        {
+          "film": "Caught Stealing",
+          "costar": "Regina King"
+        },
+        {
+          "film": "Ray",
+          "costar": "Kerry Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-09",
+      "startingActor": "Jessica Chastain",
+      "endingActor": "Ana de Armas",
+      "idealPath": [
+        {
+          "film": "A Most Violent Year",
+          "costar": "Catalina Sandino Moreno"
+        },
+        {
+          "film": "Ballerina (2025)",
+          "costar": "Ana de Armas"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-10",
+      "startingActor": "Christian Bale",
+      "endingActor": "Emma Stone",
+      "idealPath": [
+        {
+          "film": "3:10 to Yuma (2007)",
+          "costar": "Luke Wilson"
+        },
+        {
+          "film": "Zombieland: Double Tap",
+          "costar": "Emma Stone"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-11",
+      "startingActor": "Irrfan Khan",
+      "endingActor": "Margot Robbie",
+      "idealPath": [
+        {
+          "film": "Inferno",
+          "costar": "Paul Ritter"
+        },
+        {
+          "film": "Suite Fran\u00e7aise",
+          "costar": "Margot Robbie"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-12",
+      "startingActor": "Adam Driver",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "Annette",
+          "costar": "Marion Cotillard"
+        },
+        {
+          "film": "Allied",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-13",
+      "startingActor": "Sandra Bullock",
+      "endingActor": "Robert Downey Jr.",
+      "idealPath": [
+        {
+          "film": "28 Days",
+          "costar": "Alan Tudyk"
+        },
+        {
+          "film": "Wonder Boys",
+          "costar": "Robert Downey Jr."
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-14",
+      "startingActor": "Simu Liu",
+      "endingActor": "Casey Affleck",
+      "idealPath": [
+        {
+          "film": "Barbie",
+          "costar": "Will Ferrell"
+        },
+        {
+          "film": "Drowning Mona",
+          "costar": "Casey Affleck"
+        }
+      ]
     }
   ]
 }

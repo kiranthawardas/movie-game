@@ -22,7 +22,6 @@ function getCurrentGame() {
 
 function App() {
   const currentGame = useMemo(() => getCurrentGame(), []);
-  const { startingActor, endingActor, idealPath } = currentGame;
 
   if (
     !localStorage.getItem("localStorageVersion") ||
@@ -44,6 +43,19 @@ function App() {
   }
 
   // Initialize state with a function that reads localStorage
+  const [localCurrentGame, setLocalCurrentGame] = useState(() => {
+    const savedCurrentGame = localStorage.getItem('currentGame');
+    if (savedCurrentGame) {
+      try {
+        return JSON.parse(savedCurrentGame);
+      } catch (err) {
+        localStorage.clear();
+        return [];
+      }
+    }
+    return [];
+  });
+
   const [selections, setSelections] = useState(() => {
     const savedSelectionsString = localStorage.getItem('selections');
     if (savedSelectionsString) {
@@ -62,7 +74,7 @@ function App() {
     if (savedSelectionsString) {
       try {
         const parsedSavedSelections = JSON.parse(savedSelectionsString);
-        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === endingActor;
+        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === localCurrentGame.endingActor;
       } catch (err) {
         return false;
       }
@@ -75,7 +87,7 @@ function App() {
     if (savedSelectionsString) {
       try {
         const parsedSavedSelections = JSON.parse(savedSelectionsString);
-        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === endingActor;
+        return parsedSavedSelections[parsedSavedSelections.length - 1]?.costar === localCurrentGame.endingActor;
       } catch (err) {
         return false;
       }
@@ -88,11 +100,10 @@ function App() {
   });
 
   useEffect(() => {
-    const savedCurrentGame = localStorage.getItem('currentGame');
-    if (savedCurrentGame) {
+    if (localCurrentGame) {
       try {
-        const parsed = JSON.parse(savedCurrentGame);
-        if (JSON.stringify(parsed) !== JSON.stringify(currentGame)) {
+        const parsed = JSON.parse(localCurrentGame);
+        if (JSON.stringify(parsed) !== JSON.stringify(localCurrentGame)) {
           localStorage.clear();
           setSelections([]);
           setSuccess(false);
@@ -103,9 +114,25 @@ function App() {
         localStorage.clear();
       }
     } else {
-      localStorage.setItem('currentGame', JSON.stringify(currentGame));
+      localStorage.setItem('currentGame', JSON.stringify(localCurrentGame));
     }
-  }, [currentGame, endingActor]);
+  }, [localCurrentGame]);
+
+
+  const swapActors = () => {
+    console.log("test")
+    localStorage.removeItem("selections")
+    const copyCurrentGame = localCurrentGame
+    let tmp = copyCurrentGame.endingActor
+    copyCurrentGame["endingActor"] = copyCurrentGame.startingActor
+    copyCurrentGame["startingActor"] = tmp
+    copyCurrentGame["idealPath"] = copyCurrentGame.idealPath.toReversed()
+    setLocalCurrentGame(copyCurrentGame)
+    localStorage.setItem('currentGame', JSON.stringify(copyCurrentGame));
+
+    setSelections([]);
+    localStorage.setItem('selections', JSON.stringify([]))
+  }
 
   const setSelectedFilm = (index, selectedFilm) => {
     const copySelections = [...selections];
@@ -126,7 +153,7 @@ function App() {
       copySelections.push({ film: "", costar: selectedCostar });
     }
 
-    if (selectedCostar === endingActor) {
+    if (selectedCostar === localCurrentGame.endingActor) {
       setSuccess(true);
       setSuccessModalOpen(true);
     }
@@ -148,7 +175,7 @@ function App() {
             <FilmAndCostarSelector
               success={success}
               index={i}
-              inputActor={selections[i - 1]?.costar || startingActor}
+              inputActor={selections[i - 1]?.costar || localCurrentGame.startingActor}
               selectedFilm={selections[i]?.film || ""}
               selectedCostar={selections[i]?.costar || ""}
               onSelectedFilmChange={setSelectedFilm}
@@ -166,20 +193,23 @@ function App() {
     <div className="App">
       <h1 class="main-header">The Movie Game</h1>
       <p className="start-end-actor-indicator">
-        <b>Starting Actor:</b> {startingActor}
+        <b>Starting Actor:</b> {localCurrentGame.startingActor}
       </p>
       {renderSelectionComponents()}
       <p className="start-end-actor-indicator">
-        <b>Ending Actor:</b> {endingActor}
+        <b>Ending Actor:</b> {localCurrentGame.endingActor}
       </p>
+      <button className="start-end-actor-indicator" onClick={() => swapActors()}>
+        <b>Swap</b>
+      </button>
       {instructionsModalOpen && (
         <InstructionsModal onModalClose={() => setInstructionsModalOpen(false)} />
       )}
       {success && successModalOpen && (
         <WinningModal
           selections={selections}
-          startingActor={startingActor}
-          idealPath={idealPath}
+          startingActor={localCurrentGame.startingActor}
+          idealPath={localCurrentGame.idealPath}
           onModalClose={() => setSuccessModalOpen(false)}
         />
       )}
