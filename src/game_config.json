@@ -3246,6 +3246,22 @@
     },
     {
       "day": 1,
+      "date": "2026-06-25",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Hugh Jackman",
+      "idealPath": [
+        {
+          "film": "2 Guns",
+          "costar": "Doris Morgado"
+        },
+        {
+          "film": "Logan",
+          "costar": "Hugh Jackman"
+        }
+      ]
+    },
+    {
+      "day": 1,
       "date": "2026-06-26",
       "startingActor": "Denzel Washington",
       "endingActor": "Hugh Jackman",
