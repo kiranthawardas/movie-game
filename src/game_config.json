@@ -3571,6 +3571,318 @@
           "costar": "Casey Affleck"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-17",
+      "startingActor": "Varun Dhawan",
+      "endingActor": "Emma Stone",
+      "idealPath": [
+        {
+          "film": "ABCD 2",
+          "costar": "Lauren Gottlieb"
+        },
+        {
+          "film": "Alvin and the Chipmunks: Chipwrecked",
+          "costar": "Anna Faris"
+        },
+        {
+          "film": "Movie 43",
+          "costar": "Emma Stone"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-18",
+      "startingActor": "Anthony Hopkins",
+      "endingActor": "Joaquin Phoenix",
+      "idealPath": [
+        {
+          "film": "84 Charing Cross Road",
+          "costar": "Ian McNeice"
+        },
+        {
+          "film": "Napoleon",
+          "costar": "Joaquin Phoenix"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-19",
+      "startingActor": "Jennifer Lawrence",
+      "endingActor": "Natalie Portman",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Bradley Cooper"
+        },
+        {
+          "film": "Avengers: Endgame",
+          "costar": "Natalie Portman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-20",
+      "startingActor": "Shah Rukh Khan",
+      "endingActor": "Julia Roberts",
+      "idealPath": [
+        {
+          "film": "Billu",
+          "costar": "Om Puri"
+        },
+        {
+          "film": "Charlie Wilson's War",
+          "costar": "Julia Roberts"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-21",
+      "startingActor": "Kareena Kapoor Khan",
+      "endingActor": "Brie Larson",
+      "idealPath": [
+        {
+          "film": "Kambakkht Ishq",
+          "costar": "Brandon Routh"
+        },
+        {
+          "film": "Scott Pilgrim vs. the World",
+          "costar": "Brie Larson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-22",
+      "startingActor": "Morgan Freeman",
+      "endingActor": "Dwayne Johnson",
+      "idealPath": [
+        {
+          "film": "10 Items or Less",
+          "costar": "Bobby Cannavale"
+        },
+        {
+          "film": "Jumanji: Welcome to the Jungle",
+          "costar": "Dwayne Johnson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-23",
+      "startingActor": "Emma Stone",
+      "endingActor": "Tom Cruise",
+      "idealPath": [
+        {
+          "film": "Aloha",
+          "costar": "Alec Baldwin"
+        },
+        {
+          "film": "Mission: Impossible - Fallout",
+          "costar": "Tom Cruise"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-24",
+      "startingActor": "Mahershala Ali",
+      "endingActor": "Will Smith",
+      "idealPath": [
+        {
+          "film": "Alita: Battle Angel",
+          "costar": "Derek Mears"
+        },
+        {
+          "film": "Men in Black II",
+          "costar": "Will Smith"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-25",
+      "startingActor": "Michael B. Jordan",
+      "endingActor": "Sandra Bullock",
+      "idealPath": [
+        {
+          "film": "Black Panther",
+          "costar": "Alexis Rhee"
+        },
+        {
+          "film": "Crash",
+          "costar": "Sandra Bullock"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-26",
+      "startingActor": "Salman Khan",
+      "endingActor": "Adam Driver",
+      "idealPath": [
+        {
+          "film": "Mujhse Shaadi Karogi",
+          "costar": "Akshay Kumar"
+        },
+        {
+          "film": "Star Wars: The Last Jedi",
+          "costar": "Adam Driver"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-27",
+      "startingActor": "Colin Farrell",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "A Bridge Too Far",
+          "costar": "Alun Armstrong"
+        },
+        {
+          "film": "The French Lieutenant's Woman",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-28",
+      "startingActor": "Samuel L. Jackson",
+      "endingActor": "Jessica Chastain",
+      "idealPath": [
+        {
+          "film": "A Shock to the System",
+          "costar": "Michael Caine"
+        },
+        {
+          "film": "Interstellar",
+          "costar": "Jessica Chastain"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-29",
+      "startingActor": "Ranbir Kapoor",
+      "endingActor": "Chris Evans",
+      "idealPath": [
+        {
+          "film": "Ae Dil Hai Mushkil",
+          "costar": "Aishwarya Rai Bachchan"
+        },
+        {
+          "film": "Bride & Prejudice",
+          "costar": "Georgina Chapman"
+        },
+        {
+          "film": "The Nanny Diaries",
+          "costar": "Chris Evans"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-30",
+      "startingActor": "Jessica Chastain",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "A Most Violent Year",
+          "costar": "Albert Brooks"
+        },
+        {
+          "film": "Defending Your Life",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-07-31",
+      "startingActor": "Chadwick Boseman",
+      "endingActor": "Jake Gyllenhaal",
+      "idealPath": [
+        {
+          "film": "21 Bridges",
+          "costar": "Chris Ghaffari"
+        },
+        {
+          "film": "Velvet Buzzsaw",
+          "costar": "Jake Gyllenhaal"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-01",
+      "startingActor": "Pedro Pascal",
+      "endingActor": "Julia Roberts",
+      "idealPath": [
+        {
+          "film": "Burn Notice: The Fall of Sam Axe",
+          "costar": "Bruce Campbell"
+        },
+        {
+          "film": "The Ant Bully",
+          "costar": "Julia Roberts"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-02",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Oscar Isaac",
+      "idealPath": [
+        {
+          "film": "2 Guns",
+          "costar": "Mark Wahlberg"
+        },
+        {
+          "film": "Mojave",
+          "costar": "Oscar Isaac"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-03",
+      "startingActor": "Joaquin Phoenix",
+      "endingActor": "Antonio Banderas",
+      "idealPath": [
+        {
+          "film": "Don't Worry, He Won't Get Far on Foot",
+          "costar": "Betsy Sodaro"
+        },
+        {
+          "film": "Puss in Boots: The Last Wish",
+          "costar": "Antonio Banderas"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-04",
+      "startingActor": "Philip Seymour Hoffman",
+      "endingActor": "Charlize Theron",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Edward Norton"
+        },
+        {
+          "film": "The Italian Job (2003)",
+          "costar": "Charlize Theron"
+        }
+      ]
     }
   ]
 }
