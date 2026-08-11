@@ -2,7 +2,7 @@ import "./App.css";
 import movie_casts from "./movie_casts.json";
 import actor_filmographies from "./actor_filmographies.json";
 import gameConfig from "./game_config.json";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 
 function getCurrentGame() {
   // Get current date in EST/EDT timezone
@@ -99,39 +99,22 @@ function App() {
     return !localStorage.getItem('selections');
   });
 
-  useEffect(() => {
-    if (localCurrentGame) {
-      try {
-        const parsed = JSON.parse(localCurrentGame);
-        if (JSON.stringify(parsed) !== JSON.stringify(localCurrentGame)) {
-          localStorage.clear();
-          setSelections([]);
-          setSuccess(false);
-          setSuccessModalOpen(false);
-          setInstructionsModalOpen(true);
-        }
-      } catch (err) {
-        localStorage.clear();
-      }
-    } else {
-      localStorage.setItem('currentGame', JSON.stringify(localCurrentGame));
-    }
-  }, [localCurrentGame]);
-
-
   const swapActors = () => {
-    console.log("test")
-    localStorage.removeItem("selections")
-    const copyCurrentGame = localCurrentGame
-    let tmp = copyCurrentGame.endingActor
-    copyCurrentGame["endingActor"] = copyCurrentGame.startingActor
-    copyCurrentGame["startingActor"] = tmp
-    copyCurrentGame["idealPath"] = copyCurrentGame.idealPath.toReversed()
-    setLocalCurrentGame(copyCurrentGame)
-    localStorage.setItem('currentGame', JSON.stringify(copyCurrentGame));
+    const swappedGame = {
+      ...localCurrentGame,
+      startingActor: localCurrentGame.endingActor,
+      endingActor: localCurrentGame.startingActor,
+      idealPath: reversePath(localCurrentGame.startingActor, localCurrentGame.idealPath),
+    };
 
+    setLocalCurrentGame(swappedGame);
+    localStorage.setItem('currentGame', JSON.stringify(swappedGame));
+
+    // Swapping starts a fresh solve from the new starting actor.
     setSelections([]);
-    localStorage.setItem('selections', JSON.stringify([]))
+    setSuccess(false);
+    setSuccessModalOpen(false);
+    localStorage.setItem('selections', JSON.stringify([]));
   }
 
   const setSelectedFilm = (index, selectedFilm) => {
@@ -191,7 +174,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 class="main-header">The Movie Game</h1>
+      <h1 className="main-header">The Movie Game</h1>
       <p className="start-end-actor-indicator">
         <b>Starting Actor:</b> {localCurrentGame.startingActor}
       </p>
@@ -203,18 +186,42 @@ function App() {
         <b>Swap</b>
       </button>
       {instructionsModalOpen && (
-        <InstructionsModal onModalClose={() => setInstructionsModalOpen(false)} />
+        <div
+          className="modal-overlay"
+          onClick={(e) => e.target === e.currentTarget && setInstructionsModalOpen(false)}
+        >
+          <InstructionsModal onModalClose={() => setInstructionsModalOpen(false)} />
+        </div>
       )}
       {success && successModalOpen && (
-        <WinningModal
-          selections={selections}
-          startingActor={localCurrentGame.startingActor}
-          idealPath={localCurrentGame.idealPath}
-          onModalClose={() => setSuccessModalOpen(false)}
-        />
+        <div
+          className="modal-overlay"
+          onClick={(e) => e.target === e.currentTarget && setSuccessModalOpen(false)}
+        >
+          <WinningModal
+            selections={selections}
+            startingActor={localCurrentGame.startingActor}
+            idealPath={localCurrentGame.idealPath}
+            onModalClose={() => setSuccessModalOpen(false)}
+          />
+        </div>
       )}
     </div>
   );
+}
+
+function reversePath(startingActor, path) {
+  // The path visits nodes in order: [start, costar_1, ..., costar_n (= end)],
+  // where film_k connects node_{k-1} and node_k. To reverse it (end -> start),
+  // film_n connects the end with node_{n-1}, film_{n-1} with node_{n-2}, and so
+  // on -- so the films reverse and each keeps its *earlier* node as the co-star.
+  const films = path.map((step) => step.film);
+  const nodes = [startingActor, ...path.map((step) => step.costar)];
+  const reversed = [];
+  for (let k = path.length; k >= 1; k--) {
+    reversed.push({ film: films[k - 1], costar: nodes[k - 1] });
+  }
+  return reversed;
 }
 
 function buildPathText(startingActor, path) {
@@ -260,7 +267,7 @@ function InstructionsModal({ onModalClose }) {
       <p>Starting Actor: Matt Damon</p>
       <p>Ending Actor: Tom Cruise</p>
 
-      <div class="path"><i>
+      <div className="path"><i>
         {examplePathText}
       </i>
       </div>
@@ -270,7 +277,12 @@ function InstructionsModal({ onModalClose }) {
 }
 
 function buildSuccessMessage(startingActor, path) {
-  let message = "The Movie Game #3 \n\n";
+  const date = new Date().toLocaleDateString("en-US", {
+    timeZone: "America/New_York",
+    month: "short",
+    day: "numeric",
+  });
+  let message = `The Movie Game ${date}\n\n`;
   message += `🎬 Your Path (${path.length} moves)\n${startingActor}`;
 
   path.forEach(step => {
@@ -318,10 +330,18 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
     shareText = "Copy Results"
   }
 
+  const moves = selections.length;
+  const idealMoves = idealPath?.length;
+
   return (
     <div className="winning-modal modal">
+      <h1>You got it! 🎉</h1>
+      <p className="win-summary">
+        Solved in {moves} {moves === 1 ? "move" : "moves"}
+        {idealMoves != null && moves > idealMoves && ` · ideal is ${idealMoves}`}
+      </p>
       <h1>Your Path</h1>
-      <div class="path">
+      <div className="path">
         <i>
           {pathText}
         </i>
@@ -342,7 +362,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
       {idealPathOpen && (
         <>
           <h1>Ideal Path</h1>
-          <div class="path">
+          <div className="path">
             <i>
               {idealPathText}
             </i>
