@@ -24,3 +24,9 @@ yarn-error.log*
 
 TMDB_all_movies.csv
 movies_metadata_2.csv
+# TMDB API response cache (regenerate with generate_data_tmdb.py)
+src/.tmdb_cache/
+
+# Python bytecode
+src/__pycache__/
+__pycache__/

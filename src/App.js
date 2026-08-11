@@ -176,10 +176,12 @@ function App() {
     <div className="App">
       <h1 className="main-header">The Movie Game</h1>
       <p className="start-end-actor-indicator">
+        <span className="path-icon" aria-hidden="true">👤</span>{" "}
         <b>Starting Actor:</b> {localCurrentGame.startingActor}
       </p>
       {renderSelectionComponents()}
       <p className="start-end-actor-indicator">
+        <span className="path-icon" aria-hidden="true">👤</span>{" "}
         <b>Ending Actor:</b> {localCurrentGame.endingActor}
       </p>
       <button className="start-end-actor-indicator" onClick={() => swapActors()}>
@@ -224,23 +226,29 @@ function reversePath(startingActor, path) {
   return reversed;
 }
 
-function buildPathText(startingActor, path) {
-  const pathElements = [<p key="start"><b>{startingActor}</b></p>];
+function ActorChip({ name }) {
+  return (
+    <div className="path-actor">
+      <span className="path-icon" aria-hidden="true">👤</span>
+      <span>{name}</span>
+    </div>
+  );
+}
+
+function PathView({ startingActor, path, variant = "user" }) {
+  const items = [<ActorChip name={startingActor} key="a0" />];
 
   path.forEach((step, i) => {
-    pathElements.push(
-      <p key={`film-${i}`}>
-        was in <b><i>{step.film}</i></b>
-      </p>
+    items.push(
+      <div className="path-film" key={`f${i}`}>
+        <span className="path-icon" aria-hidden="true">🎬</span>
+        <span className="path-film-title">{step.film}</span>
+      </div>
     );
-    pathElements.push(
-      <p key={`costar-${i}`}>
-        with <b>{step.costar}</b>
-      </p>
-    );
+    items.push(<ActorChip name={step.costar} key={`a${i + 1}`} />);
   });
 
-  return pathElements;
+  return <div className={`path-view path-view--${variant}`}>{items}</div>;
 }
 
 function InstructionsModal({ onModalClose }) {
@@ -248,7 +256,6 @@ function InstructionsModal({ onModalClose }) {
     { film: "Air", costar: "Jason Bateman" },
     { film: "Tropic Thunder", costar: "Tom Cruise" },
   ];
-  const examplePathText = buildPathText("Matt Damon", examplePath);
 
   return (
     <div className="modal">
@@ -264,13 +271,7 @@ function InstructionsModal({ onModalClose }) {
       <p>
         <b><u>Example:</u></b>
       </p>
-      <p>Starting Actor: Matt Damon</p>
-      <p>Ending Actor: Tom Cruise</p>
-
-      <div className="path"><i>
-        {examplePathText}
-      </i>
-      </div>
+      <PathView startingActor="Matt Damon" path={examplePath} />
       <button onClick={onModalClose}>Close</button>
     </div>
   );
@@ -296,8 +297,6 @@ function buildSuccessMessage(startingActor, path) {
 function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   const [idealPathOpen, setIdealPathOpen] = useState(false);
 
-  const idealPathText = buildPathText(startingActor, idealPath);
-  const pathText = buildPathText(startingActor, selections);
   const successMessage = buildSuccessMessage(startingActor, selections);
   const userAgent = window.navigator.userAgent.toLowerCase();
   const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
@@ -341,11 +340,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
         {idealMoves != null && moves > idealMoves && ` · ideal is ${idealMoves}`}
       </p>
       <h1>Your Path</h1>
-      <div className="path">
-        <i>
-          {pathText}
-        </i>
-      </div>
+      <PathView startingActor={startingActor} path={selections} variant="user" />
       <button className="share-button" onClick={handleShare}>
         {shareText}
         <svg className="share-icon" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -362,11 +357,7 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
       {idealPathOpen && (
         <>
           <h1>Ideal Path</h1>
-          <div className="path">
-            <i>
-              {idealPathText}
-            </i>
-          </div>
+          <PathView startingActor={startingActor} path={idealPath} variant="ideal" />
         </>
       )}
     </div>
@@ -386,6 +377,7 @@ function FilmAndCostarSelector({ success, index, inputActor, selectedFilm, selec
   return (
     <div className="selector">
       <div className="column">
+        <span className="path-icon" aria-hidden="true">🎬</span>
         <select
           disabled={success || filmOptions.length === 0}
           value={selectedFilm}
@@ -400,6 +392,7 @@ function FilmAndCostarSelector({ success, index, inputActor, selectedFilm, selec
         </select>
       </div>
       <div className="column">
+        <span className="path-icon" aria-hidden="true">👤</span>
         <select
           disabled={!selectedFilm || success || costarOptions.length === 0}
           value={selectedCostar}
