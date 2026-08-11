@@ -3883,6 +3883,286 @@
           "costar": "Charlize Theron"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-11",
+      "startingActor": "Zendaya",
+      "endingActor": "Simu Liu",
+      "idealPath": [
+        {
+          "film": "Spider-Man: Homecoming",
+          "costar": "Cassidy Alexandra Kahler"
+        },
+        {
+          "film": "Jackpot!",
+          "costar": "Simu Liu"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-12",
+      "startingActor": "John Boyega",
+      "endingActor": "Javier Bardem",
+      "idealPath": [
+        {
+          "film": "Attack the Block",
+          "costar": "Lee Nicholas Harris"
+        },
+        {
+          "film": "Skyfall",
+          "costar": "Javier Bardem"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-13",
+      "startingActor": "Oscar Isaac",
+      "endingActor": "Deepika Padukone",
+      "idealPath": [
+        {
+          "film": "All About the Benjamins",
+          "costar": "Ice Cube"
+        },
+        {
+          "film": "xXx: Return of Xander Cage",
+          "costar": "Deepika Padukone"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-14",
+      "startingActor": "Michelle Yeoh",
+      "endingActor": "Ayushmann Khurrana",
+      "idealPath": [
+        {
+          "film": "A Haunting in Venice",
+          "costar": "Ali Khan"
+        },
+        {
+          "film": "Animal",
+          "costar": "Anshul Chauhan"
+        },
+        {
+          "film": "Shubh Mangal Saavdhan",
+          "costar": "Ayushmann Khurrana"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-15",
+      "startingActor": "Joaquin Phoenix",
+      "endingActor": "Anthony Hopkins",
+      "idealPath": [
+        {
+          "film": "8MM",
+          "costar": "Anthony Heald"
+        },
+        {
+          "film": "Red Dragon",
+          "costar": "Anthony Hopkins"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-16",
+      "startingActor": "Mark Ruffalo",
+      "endingActor": "Tom Hardy",
+      "idealPath": [
+        {
+          "film": "13 Going on 30",
+          "costar": "Andy Serkis"
+        },
+        {
+          "film": "Venom: The Last Dance",
+          "costar": "Tom Hardy"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-17",
+      "startingActor": "Jake Gyllenhaal",
+      "endingActor": "Oscar Isaac",
+      "idealPath": [
+        {
+          "film": "Accidental Love",
+          "costar": "Bill Hader"
+        },
+        {
+          "film": "Star Wars: The Force Awakens",
+          "costar": "Oscar Isaac"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-18",
+      "startingActor": "Tom Hanks",
+      "endingActor": "Mahershala Ali",
+      "idealPath": [
+        {
+          "film": "A Hologram for the King",
+          "costar": "Sarita Choudhury"
+        },
+        {
+          "film": "The Hunger Games: Mockingjay - Part 1",
+          "costar": "Mahershala Ali"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-19",
+      "startingActor": "Idris Elba",
+      "endingActor": "Colin Farrell",
+      "idealPath": [
+        {
+          "film": "100 Streets",
+          "costar": "Franz Drameh"
+        },
+        {
+          "film": "The Gentlemen",
+          "costar": "Colin Farrell"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-20",
+      "startingActor": "Paul Mescal",
+      "endingActor": "Christian Bale",
+      "idealPath": [
+        {
+          "film": "Carmen",
+          "costar": "Elsa Pataky"
+        },
+        {
+          "film": "Thor: Love and Thunder",
+          "costar": "Christian Bale"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-21",
+      "startingActor": "Tom Cruise",
+      "endingActor": "Ryan Gosling",
+      "idealPath": [
+        {
+          "film": "A Few Good Men",
+          "costar": "Kevin Bacon"
+        },
+        {
+          "film": "Crazy, Stupid, Love.",
+          "costar": "Ryan Gosling"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-22",
+      "startingActor": "Reese Witherspoon",
+      "endingActor": "Benedict Cumberbatch",
+      "idealPath": [
+        {
+          "film": "A Wrinkle in Time",
+          "costar": "Chris Pine"
+        },
+        {
+          "film": "Star Trek Into Darkness",
+          "costar": "Benedict Cumberbatch"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-23",
+      "startingActor": "Philip Seymour Hoffman",
+      "endingActor": "Hugh Jackman",
+      "idealPath": [
+        {
+          "film": "25th Hour",
+          "costar": "Aaron Stanford"
+        },
+        {
+          "film": "Deadpool & Wolverine",
+          "costar": "Hugh Jackman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-24",
+      "startingActor": "Viola Davis",
+      "endingActor": "Kerry Washington",
+      "idealPath": [
+        {
+          "film": "Air",
+          "costar": "Marlon Wayans"
+        },
+        {
+          "film": "Little Man",
+          "costar": "Kerry Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-25",
+      "startingActor": "Benedict Cumberbatch",
+      "endingActor": "Salman Khan",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Brad Pitt"
+        },
+        {
+          "film": "Bullet Train",
+          "costar": "Michelle Lee"
+        },
+        {
+          "film": "Tiger 3",
+          "costar": "Salman Khan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-26",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Anushka Sharma",
+      "idealPath": [
+        {
+          "film": "Mississippi Masala",
+          "costar": "Aanjjan Srivastav"
+        },
+        {
+          "film": "Jab Harry Met Sejal",
+          "costar": "Anushka Sharma"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-08-27",
+      "startingActor": "Christian Bale",
+      "endingActor": "Angelina Jolie",
+      "idealPath": [
+        {
+          "film": "A Midsummer Night's Dream",
+          "costar": "John Sessions"
+        },
+        {
+          "film": "The Good Shepherd",
+          "costar": "Angelina Jolie"
+        }
+      ]
     }
   ]
 }
