@@ -2,7 +2,8 @@ import "./App.css";
 import movie_casts from "./movie_casts.json";
 import actor_filmographies from "./actor_filmographies.json";
 import gameConfig from "./game_config.json";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useCombobox } from "downshift";
 
 function getCurrentGame() {
   // Get current date in EST/EDT timezone
@@ -364,6 +365,96 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   );
 }
 
+function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
+  const [inputValue, setInputValue] = useState(value || "");
+
+  // Keep the input in sync when the selection is changed/reset externally
+  // (e.g. picking an earlier film clears the co-stars below it).
+  useEffect(() => {
+    setInputValue(value || "");
+  }, [value]);
+
+  // Substring filter (case-insensitive). While the input still shows the
+  // current selection, show the full list so the menu isn't pre-filtered.
+  const items = useMemo(() => {
+    const query = inputValue.trim().toLowerCase();
+    if (!query || query === (value || "").toLowerCase()) return options;
+    return options.filter((option) => option.toLowerCase().includes(query));
+  }, [options, inputValue, value]);
+
+  const {
+    isOpen,
+    getMenuProps,
+    getInputProps,
+    getToggleButtonProps,
+    highlightedIndex,
+    getItemProps,
+  } = useCombobox({
+    items,
+    inputValue,
+    selectedItem: value || null,
+    itemToString: (item) => item ?? "",
+    onInputValueChange: ({ inputValue: next }) => setInputValue(next ?? ""),
+    onSelectedItemChange: ({ selectedItem }) => {
+      if (selectedItem != null) onChange(selectedItem);
+    },
+  });
+
+  return (
+    <div className="searchable-select">
+      <div className="searchable-control">
+        <input
+          className="searchable-input"
+          {...getInputProps({ placeholder, disabled })}
+        />
+        <button
+          type="button"
+          aria-label="toggle menu"
+          disabled={disabled}
+          className={"searchable-toggle" + (isOpen ? " is-open" : "")}
+          {...getToggleButtonProps()}
+          tabIndex={-1}
+        >
+          <svg
+            className="searchable-chevron"
+            viewBox="0 0 20 20"
+            width="15"
+            height="15"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 8l5 5 5-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul
+        className={"searchable-menu" + (isOpen && items.length ? " is-open" : "")}
+        {...getMenuProps()}
+      >
+        {isOpen &&
+          items.map((item, index) => (
+            <li
+              key={`${item}-${index}`}
+              className={
+                "searchable-option" +
+                (highlightedIndex === index ? " is-highlighted" : "")
+              }
+              {...getItemProps({ item, index })}
+            >
+              {item}
+            </li>
+          ))}
+      </ul>
+    </div>
+  );
+}
+
 function FilmAndCostarSelector({ success, index, inputActor, selectedFilm, selectedCostar, onSelectedFilmChange, onSelectedCostarChange }) {
   const filmOptions = actor_filmographies[inputActor] || [];
   const costarOptions = selectedFilm
@@ -378,33 +469,23 @@ function FilmAndCostarSelector({ success, index, inputActor, selectedFilm, selec
     <div className="selector">
       <div className="column">
         <span className="path-icon" aria-hidden="true">🎬</span>
-        <select
-          disabled={success || filmOptions.length === 0}
+        <SearchableSelect
+          options={filmOptions}
           value={selectedFilm}
-          onChange={(e) => onSelectedFilmChange(index, e.target.value)}
-        >
-          <option disabled value="">
-            Select a {inputActor} film
-          </option>
-          {filmOptions.map((film) => (
-            <option key={film} value={film}>{film}</option>
-          ))}
-        </select>
+          onChange={(film) => onSelectedFilmChange(index, film)}
+          placeholder={`Select a ${inputActor} film`}
+          disabled={success || filmOptions.length === 0}
+        />
       </div>
       <div className="column">
         <span className="path-icon" aria-hidden="true">👤</span>
-        <select
-          disabled={!selectedFilm || success || costarOptions.length === 0}
+        <SearchableSelect
+          options={costarOptions}
           value={selectedCostar}
-          onChange={(e) => onSelectedCostarChange(index, e.target.value)}
-        >
-          <option disabled value="">
-            {costarSelectorText}
-          </option>
-          {costarOptions.map((costar) => (
-            <option key={costar} value={costar}>{costar}</option>
-          ))}
-        </select>
+          onChange={(costar) => onSelectedCostarChange(index, costar)}
+          placeholder={costarSelectorText}
+          disabled={!selectedFilm || success || costarOptions.length === 0}
+        />
       </div>
     </div>
   );

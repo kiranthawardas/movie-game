@@ -34,39 +34,126 @@ h1 {
   margin-bottom:0px;
 }
 
-select {
-  height: 3em;
+/* --- Searchable combobox (film + co-star pickers) --- */
+.searchable-select {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.searchable-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchable-input {
   width: 100%;
-  max-width: 21em;
+  height: 3em;
   box-sizing: border-box;
+  padding: 0 2.9em 0 0.9em;
   border: 1px solid #d3d3d3;
   border-radius: 8px;
   text-align: center;
-  text-wrap: auto;
   font-family: 'American Typewriter', Courier, monospace;
   font-size: 1em;
   font-weight: 500;
   background-color: white;
   color: black;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  cursor: pointer;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-select:focus-visible {
+.searchable-input::placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+
+.searchable-input:focus-visible {
   outline: none;
   border-color: #ffffff;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
 }
 
-select:disabled {
+.searchable-input:disabled {
   background-color: #e0e0e0;
   color: #8a8a8a;
   border-color: #cfcfcf;
   box-shadow: none;
   cursor: not-allowed;
+}
+
+/* Override the global button styling for the chevron toggle. */
+.searchable-toggle,
+.searchable-toggle:hover {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4em;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-left: 1px solid #e4e4e4;
+  border-radius: 0 7px 7px 0;
+  color: #555555;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.searchable-chevron {
+  display: block;
+  transition: transform 0.18s ease;
+}
+
+.searchable-toggle.is-open .searchable-chevron {
+  transform: rotate(180deg);
+}
+
+.searchable-toggle:disabled {
+  color: #b5b5b5;
+  border-left-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.searchable-menu {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 3px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 15em;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+  text-align: left;
+}
+
+.searchable-menu:not(.is-open) {
+  display: none;
+}
+
+.searchable-option {
+  padding: 0.55em 0.9em;
+  font-size: 0.95em;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.searchable-option.is-highlighted {
+  background-color: rgb(6, 125, 172);
+  color: white;
 }
 
 .selector {
@@ -91,11 +178,6 @@ select:disabled {
 .column .path-icon {
   font-size: 1.2em;
   flex: 0 0 auto;
-}
-
-.column select {
-  flex: 1 1 auto;
-  min-width: 0;
 }
 
 .start-end-actor-indicator {
