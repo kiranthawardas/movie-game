@@ -34,7 +34,7 @@ h1 {
   margin-bottom:0px;
 }
 
-/* --- Searchable combobox (film + co-star pickers) --- */
+/* --- Searchable picker (film + co-star): tap to open, search inside --- */
 .searchable-select {
   position: relative;
   flex: 1 1 auto;
@@ -43,41 +43,35 @@ h1 {
   margin-bottom: 0.3em;
 }
 
-.searchable-control {
-  position: relative;
+/* The collapsed control is a plain button styled like the old field. */
+.searchable-control,
+.searchable-control:hover {
   display: flex;
   align-items: center;
-}
-
-.searchable-input {
   width: 100%;
   height: 3em;
   box-sizing: border-box;
-  padding: 0 2.9em 0 0.9em;
+  margin: 0;
+  padding: 0 0 0 0.9em;
   border: 1px solid #d3d3d3;
   border-radius: 8px;
-  text-align: center;
+  background-color: white;
+  color: black;
   font-family: 'American Typewriter', Courier, monospace;
   font-size: 1em;
   font-weight: 500;
-  background-color: white;
-  color: black;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
-.searchable-input::placeholder {
-  color: #6f6f6f;
-  opacity: 1;
-}
-
-.searchable-input:focus-visible {
+.searchable-control:focus-visible {
   outline: none;
   border-color: #ffffff;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
 }
 
-.searchable-input:disabled {
+.searchable-control:disabled {
   background-color: #e0e0e0;
   color: #8a8a8a;
   border-color: #cfcfcf;
@@ -85,26 +79,32 @@ h1 {
   cursor: not-allowed;
 }
 
-/* Override the global button styling for the chevron toggle. */
-.searchable-toggle,
-.searchable-toggle:hover {
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  bottom: 1px;
+.searchable-value {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchable-value.is-placeholder {
+  color: #6f6f6f;
+}
+
+.searchable-chevron-box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.4em;
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
+  align-self: stretch;
   border-left: 1px solid #e4e4e4;
-  border-radius: 0 7px 7px 0;
   color: #555555;
-  cursor: pointer;
-  box-shadow: none;
+}
+
+.searchable-control:disabled .searchable-chevron-box {
+  color: #b5b5b5;
+  border-left-color: #dcdcdc;
 }
 
 .searchable-chevron {
@@ -112,36 +112,55 @@ h1 {
   transition: transform 0.18s ease;
 }
 
-.searchable-toggle.is-open .searchable-chevron {
+.searchable-control.is-open .searchable-chevron {
   transform: rotate(180deg);
 }
 
-.searchable-toggle:disabled {
-  color: #b5b5b5;
-  border-left-color: #dcdcdc;
-  cursor: not-allowed;
-}
-
-.searchable-menu {
+/* Open panel: sticky search field on top, scrollable options below. */
+.searchable-panel {
   position: absolute;
   z-index: 50;
   top: calc(100% + 3px);
   left: 0;
   right: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  max-height: 15em;
-  overflow-y: auto;
   background-color: white;
   border: 1px solid #cfcfcf;
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
-  text-align: left;
+  overflow: hidden;
 }
 
-.searchable-menu:not(.is-open) {
-  display: none;
+.searchable-search {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 0.7em;
+  border-bottom: 1px solid #ececec;
+}
+
+.searchable-search-icon {
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+.searchable-search-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'American Typewriter', Courier, monospace;
+  font-size: 0.95em;
+  color: #1a1a1a;
+}
+
+.searchable-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 13em;
+  overflow-y: auto;
+  text-align: left;
 }
 
 .searchable-option {
@@ -151,9 +170,20 @@ h1 {
   cursor: pointer;
 }
 
+.searchable-option.is-selected {
+  font-weight: bold;
+}
+
 .searchable-option.is-highlighted {
   background-color: rgb(6, 125, 172);
   color: white;
+}
+
+.searchable-empty {
+  padding: 0.7em 0.9em;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #8a8a8a;
 }
 
 .selector {

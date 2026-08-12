@@ -2,8 +2,7 @@ import "./App.css";
 import movie_casts from "./movie_casts.json";
 import actor_filmographies from "./actor_filmographies.json";
 import gameConfig from "./game_config.json";
-import { useState, useMemo, useEffect } from "react";
-import { useCombobox } from "downshift";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import confetti from "canvas-confetti";
 
 function launchFireworks() {
@@ -386,86 +385,100 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   );
 }
 
-// Touch devices show the on-screen keyboard whenever an input is focused.
-// downshift focuses the input when the menu opens (including via the chevron),
-// which is unwanted when the user just wants to browse the list. A read-only
-// input can be focused without raising the keyboard, so on touch devices we
-// keep it read-only until the user actually taps the text field to type.
+// Auto-focus the in-panel search box on open for pointer/desktop users, but
+// NOT on touch devices, where focusing an input pops the on-screen keyboard --
+// there, the user taps the search box themselves when they want to type.
 const IS_TOUCH =
   typeof window !== "undefined" &&
   typeof window.matchMedia === "function" &&
   window.matchMedia("(pointer: coarse)").matches;
 
+// A single, predictable model: the collapsed control is a plain button that
+// opens/closes the panel (tapping it never raises a keyboard). The open panel
+// has its own search field -- tapping THAT is what raises the keyboard to
+// filter -- and the scrollable option list. Open/browse and type/filter are
+// separate targets, so there are no hidden modes to switch between.
 function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
-  const [inputValue, setInputValue] = useState(value || "");
-  const [allowType, setAllowType] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const [highlight, setHighlight] = useState(-1);
+  const rootRef = useRef(null);
+  const searchRef = useRef(null);
+  const listRef = useRef(null);
 
-  // Keep the input in sync when the selection is changed/reset externally
-  // (e.g. picking an earlier film clears the co-stars below it).
-  useEffect(() => {
-    setInputValue(value || "");
-  }, [value]);
-
-  // Substring filter (case-insensitive). While the input still shows the
-  // current selection, show the full list so the menu isn't pre-filtered.
   const items = useMemo(() => {
-    const query = inputValue.trim().toLowerCase();
-    if (!query || query === (value || "").toLowerCase()) return options;
-    return options.filter((option) => option.toLowerCase().includes(query));
-  }, [options, inputValue, value]);
+    const q = query.trim().toLowerCase();
+    return q ? options.filter((o) => o.toLowerCase().includes(q)) : options;
+  }, [options, query]);
 
-  const {
-    isOpen,
-    getMenuProps,
-    getInputProps,
-    getToggleButtonProps,
-    highlightedIndex,
-    getItemProps,
-  } = useCombobox({
-    items,
-    inputValue,
-    selectedItem: value || null,
-    itemToString: (item) => item ?? "",
-    onInputValueChange: ({ inputValue: next }) => setInputValue(next ?? ""),
-    onSelectedItemChange: ({ selectedItem }) => {
-      if (selectedItem != null) onChange(selectedItem);
-    },
-    onIsOpenChange: ({ isOpen: open }) => {
-      // Reset to browse mode when the menu closes so the next chevron-open
-      // doesn't raise the keyboard.
-      if (!open) setAllowType(false);
-    },
-  });
+  const close = useCallback(() => {
+    setOpen(false);
+    setQuery("");
+    setHighlight(-1);
+  }, []);
+
+  // Close when clicking/tapping outside the component.
+  useEffect(() => {
+    if (!open) return undefined;
+    const onDown = (e) => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) close();
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("touchstart", onDown);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("touchstart", onDown);
+    };
+  }, [open, close]);
+
+  // Focus the search box on open for desktop; skip on touch (avoids keyboard).
+  useEffect(() => {
+    if (open && !IS_TOUCH && searchRef.current) searchRef.current.focus();
+  }, [open]);
+
+  // Keep the highlighted option scrolled into view during keyboard nav.
+  useEffect(() => {
+    if (!open || highlight < 0 || !listRef.current) return;
+    const el = listRef.current.children[highlight];
+    if (el) el.scrollIntoView({ block: "nearest" });
+  }, [highlight, open]);
+
+  const select = (item) => {
+    onChange(item);
+    close();
+  };
+
+  const onSearchKeyDown = (e) => {
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlight((h) => Math.min(h + 1, items.length - 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlight((h) => Math.max(h - 1, 0));
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (highlight >= 0 && highlight < items.length) select(items[highlight]);
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      close();
+    }
+  };
 
   return (
-    <div className="searchable-select">
-      <div className="searchable-control">
-        <input
-          className="searchable-input"
-          {...getInputProps({
-            placeholder,
-            disabled,
-            readOnly: IS_TOUCH && !allowType,
-            onPointerDown: () => {
-              if (IS_TOUCH) setAllowType(true);
-            },
-          })}
-        />
-        <button
-          type="button"
-          aria-label="toggle menu"
-          disabled={disabled}
-          className={"searchable-toggle" + (isOpen ? " is-open" : "")}
-          {...getToggleButtonProps({ onClick: () => setAllowType(false) })}
-          tabIndex={-1}
-        >
-          <svg
-            className="searchable-chevron"
-            viewBox="0 0 20 20"
-            width="15"
-            height="15"
-            aria-hidden="true"
-          >
+    <div className="searchable-select" ref={rootRef}>
+      <button
+        type="button"
+        className={"searchable-control" + (open ? " is-open" : "")}
+        disabled={disabled}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        onClick={() => (open ? close() : setOpen(true))}
+      >
+        <span className={"searchable-value" + (value ? "" : " is-placeholder")}>
+          {value || placeholder}
+        </span>
+        <span className="searchable-chevron-box" aria-hidden="true">
+          <svg className="searchable-chevron" viewBox="0 0 20 20" width="15" height="15">
             <path
               d="M5 8l5 5 5-5"
               fill="none"
@@ -475,26 +488,48 @@ function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
-      </div>
-      <ul
-        className={"searchable-menu" + (isOpen && items.length ? " is-open" : "")}
-        {...getMenuProps()}
-      >
-        {isOpen &&
-          items.map((item, index) => (
-            <li
-              key={`${item}-${index}`}
-              className={
-                "searchable-option" +
-                (highlightedIndex === index ? " is-highlighted" : "")
-              }
-              {...getItemProps({ item, index })}
-            >
-              {item}
-            </li>
-          ))}
-      </ul>
+        </span>
+      </button>
+
+      {open && (
+        <div className="searchable-panel">
+          <div className="searchable-search">
+            <span className="searchable-search-icon" aria-hidden="true">🔍</span>
+            <input
+              ref={searchRef}
+              className="searchable-search-input"
+              type="text"
+              value={query}
+              placeholder="Type to search…"
+              autoComplete="off"
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setHighlight(e.target.value ? 0 : -1);
+              }}
+              onKeyDown={onSearchKeyDown}
+            />
+          </div>
+          <ul className="searchable-menu" role="listbox" ref={listRef}>
+            {items.length === 0 && <li className="searchable-empty">No matches</li>}
+            {items.map((item, index) => (
+              <li
+                key={item}
+                role="option"
+                aria-selected={item === value}
+                className={
+                  "searchable-option" +
+                  (index === highlight ? " is-highlighted" : "") +
+                  (item === value ? " is-selected" : "")
+                }
+                onMouseEnter={() => setHighlight(index)}
+                onClick={() => select(item)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

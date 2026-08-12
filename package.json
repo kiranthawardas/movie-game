@@ -10,7 +10,6 @@
     "canvas-confetti": "^1.9.4",
     "csv": "^6.4.1",
     "csv-parse": "^6.1.0",
-    "downshift": "^9.4.0",
     "fs": "^0.0.1-security",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
