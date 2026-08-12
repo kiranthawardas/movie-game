@@ -4,6 +4,23 @@ import actor_filmographies from "./actor_filmographies.json";
 import gameConfig from "./game_config.json";
 import { useState, useMemo, useEffect } from "react";
 import { useCombobox } from "downshift";
+import confetti from "canvas-confetti";
+
+function launchFireworks() {
+  const duration = 2500;
+  const animationEnd = Date.now() + duration;
+  const colors = ["#067dac", "#1a8a5a", "#e0c069", "#ffffff", "#e05a5a"];
+  const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 200 };
+  const randomInRange = (min, max) => Math.random() * (max - min) + min;
+
+  const interval = setInterval(() => {
+    const timeLeft = animationEnd - Date.now();
+    if (timeLeft <= 0) return clearInterval(interval);
+    const particleCount = 55 * (timeLeft / duration);
+    confetti({ ...defaults, particleCount, colors, origin: { x: randomInRange(0.1, 0.35), y: Math.random() - 0.2 } });
+    confetti({ ...defaults, particleCount, colors, origin: { x: randomInRange(0.65, 0.9), y: Math.random() - 0.2 } });
+  }, 250);
+}
 
 function getCurrentGame() {
   // Get current date in EST/EDT timezone
@@ -298,6 +315,10 @@ function buildSuccessMessage(startingActor, path) {
 function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   const [idealPathOpen, setIdealPathOpen] = useState(false);
 
+  useEffect(() => {
+    launchFireworks();
+  }, []);
+
   const successMessage = buildSuccessMessage(startingActor, selections);
   const userAgent = window.navigator.userAgent.toLowerCase();
   const isIOS = /(iphone|ipad|ipod)/i.test(userAgent);
@@ -365,8 +386,19 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
   );
 }
 
+// Touch devices show the on-screen keyboard whenever an input is focused.
+// downshift focuses the input when the menu opens (including via the chevron),
+// which is unwanted when the user just wants to browse the list. A read-only
+// input can be focused without raising the keyboard, so on touch devices we
+// keep it read-only until the user actually taps the text field to type.
+const IS_TOUCH =
+  typeof window !== "undefined" &&
+  typeof window.matchMedia === "function" &&
+  window.matchMedia("(pointer: coarse)").matches;
+
 function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
   const [inputValue, setInputValue] = useState(value || "");
+  const [allowType, setAllowType] = useState(false);
 
   // Keep the input in sync when the selection is changed/reset externally
   // (e.g. picking an earlier film clears the co-stars below it).
@@ -398,6 +430,11 @@ function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
     onSelectedItemChange: ({ selectedItem }) => {
       if (selectedItem != null) onChange(selectedItem);
     },
+    onIsOpenChange: ({ isOpen: open }) => {
+      // Reset to browse mode when the menu closes so the next chevron-open
+      // doesn't raise the keyboard.
+      if (!open) setAllowType(false);
+    },
   });
 
   return (
@@ -405,14 +442,21 @@ function SearchableSelect({ options, value, onChange, placeholder, disabled }) {
       <div className="searchable-control">
         <input
           className="searchable-input"
-          {...getInputProps({ placeholder, disabled })}
+          {...getInputProps({
+            placeholder,
+            disabled,
+            readOnly: IS_TOUCH && !allowType,
+            onPointerDown: () => {
+              if (IS_TOUCH) setAllowType(true);
+            },
+          })}
         />
         <button
           type="button"
           aria-label="toggle menu"
           disabled={disabled}
           className={"searchable-toggle" + (isOpen ? " is-open" : "")}
-          {...getToggleButtonProps()}
+          {...getToggleButtonProps({ onClick: () => setAllowType(false) })}
           tabIndex={-1}
         >
           <svg
