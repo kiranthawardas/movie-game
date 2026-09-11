@@ -4166,6 +4166,22 @@
     },
     {
       "day": 1,
+      "date": "2026-09-11",
+      "startingActor": "Charlize Theron",
+      "endingActor": "Anya Taylor-Joy",
+      "idealPath": [
+        {
+          "film": "15 Minutes",
+          "costar": "Anton Yelchin"
+        },
+        {
+          "film": "Love, Antosha",
+          "costar": "Anya Taylor-Joy"
+        }
+      ]
+    },
+    {
+      "day": 1,
       "date": "2026-09-12",
       "startingActor": "Anthony Hopkins",
       "endingActor": "Akshay Kumar",
