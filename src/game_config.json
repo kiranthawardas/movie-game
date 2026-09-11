@@ -4163,6 +4163,338 @@
           "costar": "Angelina Jolie"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-12",
+      "startingActor": "Anthony Hopkins",
+      "endingActor": "Akshay Kumar",
+      "idealPath": [
+        {
+          "film": "360",
+          "costar": "Gerard Monaco"
+        },
+        {
+          "film": "Star Wars: The Last Jedi",
+          "costar": "Akshay Kumar"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-13",
+      "startingActor": "Florence Pugh",
+      "endingActor": "Tom Hanks",
+      "idealPath": [
+        {
+          "film": "A Good Person",
+          "costar": "Jessie Mueller"
+        },
+        {
+          "film": "The Post",
+          "costar": "Tom Hanks"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-14",
+      "startingActor": "Deepika Padukone",
+      "endingActor": "Robert Downey Jr.",
+      "idealPath": [
+        {
+          "film": "xXx: Return of Xander Cage",
+          "costar": "Samuel L. Jackson"
+        },
+        {
+          "film": "Avengers: Age of Ultron",
+          "costar": "Robert Downey Jr."
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-15",
+      "startingActor": "Morgan Freeman",
+      "endingActor": "Julia Roberts",
+      "idealPath": [
+        {
+          "film": "10 Items or Less",
+          "costar": "Jim Parsons"
+        },
+        {
+          "film": "The Normal Heart",
+          "costar": "Julia Roberts"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-16",
+      "startingActor": "Katrina Kaif",
+      "endingActor": "Hugh Jackman",
+      "idealPath": [
+        {
+          "film": "Agneepath",
+          "costar": "Om Puri"
+        },
+        {
+          "film": "Charlie Wilson's War",
+          "costar": "Ilia Volok"
+        },
+        {
+          "film": "Swordfish",
+          "costar": "Hugh Jackman"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-17",
+      "startingActor": "Benedict Cumberbatch",
+      "endingActor": "Kerry Washington",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Brad Pitt"
+        },
+        {
+          "film": "Mr. & Mrs. Smith (2005)",
+          "costar": "Kerry Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-18",
+      "startingActor": "Jeremy Renner",
+      "endingActor": "Halle Berry",
+      "idealPath": [
+        {
+          "film": "12 and Holding",
+          "costar": "Annabella Sciorra"
+        },
+        {
+          "film": "Jungle Fever",
+          "costar": "Halle Berry"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-19",
+      "startingActor": "Casey Affleck",
+      "endingActor": "Katrina Kaif",
+      "idealPath": [
+        {
+          "film": "200 Cigarettes",
+          "costar": "Brian McCardie"
+        },
+        {
+          "film": "Filth",
+          "costar": "Zack Eisaku Niizato"
+        },
+        {
+          "film": "Baar Baar Dekho",
+          "costar": "Katrina Kaif"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-20",
+      "startingActor": "Austin Butler",
+      "endingActor": "Scarlett Johansson",
+      "idealPath": [
+        {
+          "film": "Aliens in the Attic",
+          "costar": "Ashley Peldon"
+        },
+        {
+          "film": "Ghost World",
+          "costar": "Scarlett Johansson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-21",
+      "startingActor": "Anya Taylor-Joy",
+      "endingActor": "Taraji P. Henson",
+      "idealPath": [
+        {
+          "film": "Amsterdam",
+          "costar": "Chris Rock"
+        },
+        {
+          "film": "Madly Madagascar",
+          "costar": "Taraji P. Henson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-22",
+      "startingActor": "Shahid Kapoor",
+      "endingActor": "Simu Liu",
+      "idealPath": [
+        {
+          "film": "36 China Town",
+          "costar": "Nassar Abdulla"
+        },
+        {
+          "film": "Gandhi",
+          "costar": "Ben Kingsley"
+        },
+        {
+          "film": "Shang-Chi and the Legend of the Ten Rings",
+          "costar": "Simu Liu"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-23",
+      "startingActor": "Adam Driver",
+      "endingActor": "Anushka Sharma",
+      "idealPath": [
+        {
+          "film": "Star Wars: The Last Jedi",
+          "costar": "Akshay Kumar"
+        },
+        {
+          "film": "Patiala House",
+          "costar": "Anushka Sharma"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-24",
+      "startingActor": "Varun Dhawan",
+      "endingActor": "Johnny Depp",
+      "idealPath": [
+        {
+          "film": "Judwaa 2",
+          "costar": "Charlie Carter"
+        },
+        {
+          "film": "The Imaginarium of Doctor Parnassus",
+          "costar": "Johnny Depp"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-25",
+      "startingActor": "Halle Berry",
+      "endingActor": "Ethan Hawke",
+      "idealPath": [
+        {
+          "film": "Boomerang (1992)",
+          "costar": "Lela Rochon"
+        },
+        {
+          "film": "Brooklyn's Finest",
+          "costar": "Ethan Hawke"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-26",
+      "startingActor": "Saoirse Ronan",
+      "endingActor": "Denzel Washington",
+      "idealPath": [
+        {
+          "film": "Foe",
+          "costar": "Paul Mescal"
+        },
+        {
+          "film": "Gladiator II",
+          "costar": "Denzel Washington"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-27",
+      "startingActor": "Michael B. Jordan",
+      "endingActor": "Dwayne Johnson",
+      "idealPath": [
+        {
+          "film": "A Journal for Jordan",
+          "costar": "Jalon Christian"
+        },
+        {
+          "film": "Black Adam",
+          "costar": "Dwayne Johnson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-28",
+      "startingActor": "Oscar Isaac",
+      "endingActor": "Idris Elba",
+      "idealPath": [
+        {
+          "film": "10 Years",
+          "costar": "Anthony Mackie"
+        },
+        {
+          "film": "Avengers: Age of Ultron",
+          "costar": "Idris Elba"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-29",
+      "startingActor": "Denzel Washington",
+      "endingActor": "Daniel Craig",
+      "idealPath": [
+        {
+          "film": "2 Guns",
+          "costar": "Robert John Burke"
+        },
+        {
+          "film": "Munich",
+          "costar": "Daniel Craig"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-09-30",
+      "startingActor": "Ryan Gosling",
+      "endingActor": "Austin Butler",
+      "idealPath": [
+        {
+          "film": "Barbie",
+          "costar": "Alexandra Shipp"
+        },
+        {
+          "film": "Dude",
+          "costar": "Austin Butler"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-01",
+      "startingActor": "Barry Keoghan",
+      "endingActor": "Amitabh Bachchan",
+      "idealPath": [
+        {
+          "film": "Saltburn",
+          "costar": "Carey Mulligan"
+        },
+        {
+          "film": "The Great Gatsby",
+          "costar": "Amitabh Bachchan"
+        }
+      ]
     }
   ]
 }
