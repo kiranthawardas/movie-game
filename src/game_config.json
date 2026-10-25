@@ -4511,6 +4511,286 @@
           "costar": "Amitabh Bachchan"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-25",
+      "startingActor": "Pedro Pascal",
+      "endingActor": "Zendaya",
+      "idealPath": [
+        {
+          "film": "Eddington",
+          "costar": "Austin Butler"
+        },
+        {
+          "film": "Dune: Part Two",
+          "costar": "Zendaya"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-26",
+      "startingActor": "Hrithik Roshan",
+      "endingActor": "Brad Pitt",
+      "idealPath": [
+        {
+          "film": "Bang Bang!",
+          "costar": "Danny Denzongpa"
+        },
+        {
+          "film": "Seven Years in Tibet",
+          "costar": "Brad Pitt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-27",
+      "startingActor": "Varun Dhawan",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "ABCD 2",
+          "costar": "Lauren Gottlieb"
+        },
+        {
+          "film": "Alvin and the Chipmunks: Chipwrecked",
+          "costar": "David Cross"
+        },
+        {
+          "film": "The Post",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-28",
+      "startingActor": "Jennifer Lawrence",
+      "endingActor": "Awkwafina",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Adrian Martinez"
+        },
+        {
+          "film": "Renfield",
+          "costar": "Awkwafina"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-29",
+      "startingActor": "Joaquin Phoenix",
+      "endingActor": "Brie Larson",
+      "idealPath": [
+        {
+          "film": "Beau Is Afraid",
+          "costar": "Bill Hader"
+        },
+        {
+          "film": "Scott Pilgrim vs. the World",
+          "costar": "Brie Larson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-30",
+      "startingActor": "Simu Liu",
+      "endingActor": "Daniel Craig",
+      "idealPath": [
+        {
+          "film": "Atlas",
+          "costar": "Mark Strong"
+        },
+        {
+          "film": "Flashbacks of a Fool",
+          "costar": "Daniel Craig"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-10-31",
+      "startingActor": "Johnny Depp",
+      "endingActor": "Ethan Hawke",
+      "idealPath": [
+        {
+          "film": "21 Jump Street",
+          "costar": "Dakota Johnson"
+        },
+        {
+          "film": "Cymbeline",
+          "costar": "Ethan Hawke"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-01",
+      "startingActor": "Jeremy Renner",
+      "endingActor": "Shah Rukh Khan",
+      "idealPath": [
+        {
+          "film": "Black Widow",
+          "costar": "Georgia Curtis"
+        },
+        {
+          "film": "Ra.One",
+          "costar": "Shah Rukh Khan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-02",
+      "startingActor": "Robert Downey Jr.",
+      "endingActor": "John Boyega",
+      "idealPath": [
+        {
+          "film": "1969",
+          "costar": "Kiefer Sutherland"
+        },
+        {
+          "film": "They Cloned Tyrone",
+          "costar": "John Boyega"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-03",
+      "startingActor": "Adam Driver",
+      "endingActor": "Johnny Depp",
+      "idealPath": [
+        {
+          "film": "Annette",
+          "costar": "Marion Cotillard"
+        },
+        {
+          "film": "Public Enemies",
+          "costar": "Johnny Depp"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-04",
+      "startingActor": "Tom Cruise",
+      "endingActor": "Jake Gyllenhaal",
+      "idealPath": [
+        {
+          "film": "A Few Good Men",
+          "costar": "Noah Wyle"
+        },
+        {
+          "film": "Donnie Darko",
+          "costar": "Jake Gyllenhaal"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-05",
+      "startingActor": "Keanu Reeves",
+      "endingActor": "Tom Hardy",
+      "idealPath": [
+        {
+          "film": "A Scanner Darkly",
+          "costar": "Woody Harrelson"
+        },
+        {
+          "film": "Venom",
+          "costar": "Tom Hardy"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-06",
+      "startingActor": "Daniel Craig",
+      "endingActor": "Deepika Padukone",
+      "idealPath": [
+        {
+          "film": "Final Cut: Ladies and Gentlemen",
+          "costar": "Samuel L. Jackson"
+        },
+        {
+          "film": "xXx: Return of Xander Cage",
+          "costar": "Deepika Padukone"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-07",
+      "startingActor": "Idris Elba",
+      "endingActor": "Emma Stone",
+      "idealPath": [
+        {
+          "film": "28 Weeks Later",
+          "costar": "Catherine McCormack"
+        },
+        {
+          "film": "Magic in the Moonlight",
+          "costar": "Emma Stone"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-08",
+      "startingActor": "Benedict Cumberbatch",
+      "endingActor": "Angelina Jolie",
+      "idealPath": [
+        {
+          "film": "12 Years a Slave",
+          "costar": "Brad Pitt"
+        },
+        {
+          "film": "By the Sea",
+          "costar": "Angelina Jolie"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-09",
+      "startingActor": "Casey Affleck",
+      "endingActor": "Kangana Ranaut",
+      "idealPath": [
+        {
+          "film": "200 Cigarettes",
+          "costar": "Ben Affleck"
+        },
+        {
+          "film": "Clerks III",
+          "costar": "Nicholas Brown"
+        },
+        {
+          "film": "Kites",
+          "costar": "Kangana Ranaut"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-10",
+      "startingActor": "Javier Bardem",
+      "endingActor": "Anne Hathaway",
+      "idealPath": [
+        {
+          "film": "Before Night Falls",
+          "costar": "Johnny Depp"
+        },
+        {
+          "film": "Alice Through the Looking Glass",
+          "costar": "Anne Hathaway"
+        }
+      ]
     }
   ]
 }
