@@ -330,7 +330,6 @@ function WinningModal({ selections, startingActor, onModalClose, idealPath }) {
         await navigator.share({
           title: "The Movie Game",
           text: successMessage,
-          url: "https://kiranthawardas.github.io/movie-game/",
         });
       } catch (error) {
         console.error('Error sharing content:', error);
