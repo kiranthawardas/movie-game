@@ -4791,6 +4791,350 @@
           "costar": "Anne Hathaway"
         }
       ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-16",
+      "startingActor": "Christian Bale",
+      "endingActor": "Robert Downey Jr.",
+      "idealPath": [
+        {
+          "film": "3:10 to Yuma (2007)",
+          "costar": "Alan Tudyk"
+        },
+        {
+          "film": "Wonder Boys",
+          "costar": "Robert Downey Jr."
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-17",
+      "startingActor": "Saoirse Ronan",
+      "endingActor": "Javier Bardem",
+      "idealPath": [
+        {
+          "film": "Ammonite",
+          "costar": "Beatrice Curnew"
+        },
+        {
+          "film": "Skyfall",
+          "costar": "Javier Bardem"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-18",
+      "startingActor": "Salman Khan",
+      "endingActor": "Mark Ruffalo",
+      "idealPath": [
+        {
+          "film": "Ajab Prem Ki Ghazab Kahani",
+          "costar": "Darshan Jariwala"
+        },
+        {
+          "film": "Million Dollar Arm",
+          "costar": "Brooke Jaye Taylor"
+        },
+        {
+          "film": "Iron Man 3",
+          "costar": "Mark Ruffalo"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-19",
+      "startingActor": "Deepika Padukone",
+      "endingActor": "Anya Taylor-Joy",
+      "idealPath": [
+        {
+          "film": "Chandni Chowk to China",
+          "costar": "Roger Yuan"
+        },
+        {
+          "film": "Dune: Part Two",
+          "costar": "Anya Taylor-Joy"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-20",
+      "startingActor": "Jennifer Lawrence",
+      "endingActor": "Dwayne Johnson",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Armen Garo"
+        },
+        {
+          "film": "The Game Plan",
+          "costar": "Dwayne Johnson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-21",
+      "startingActor": "Akshay Kumar",
+      "endingActor": "Leonardo DiCaprio",
+      "idealPath": [
+        {
+          "film": "Aankhen",
+          "costar": "Amitabh Bachchan"
+        },
+        {
+          "film": "The Great Gatsby",
+          "costar": "Leonardo DiCaprio"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-22",
+      "startingActor": "Javier Bardem",
+      "endingActor": "Mahershala Ali",
+      "idealPath": [
+        {
+          "film": "Being the Ricardos",
+          "costar": "J.K. Simmons"
+        },
+        {
+          "film": "Spider-Man: Across the Spider-Verse",
+          "costar": "Mahershala Ali"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-23",
+      "startingActor": "Anya Taylor-Joy",
+      "endingActor": "Dwayne Johnson",
+      "idealPath": [
+        {
+          "film": "Amsterdam",
+          "costar": "Beth Grant"
+        },
+        {
+          "film": "Southland Tales",
+          "costar": "Dwayne Johnson"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-24",
+      "startingActor": "Colin Farrell",
+      "endingActor": "Meryl Streep",
+      "idealPath": [
+        {
+          "film": "A Bridge Too Far",
+          "costar": "Alun Armstrong"
+        },
+        {
+          "film": "The French Lieutenant's Woman",
+          "costar": "Meryl Streep"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-25",
+      "startingActor": "Meryl Streep",
+      "endingActor": "Barry Keoghan",
+      "idealPath": [
+        {
+          "film": "A.I. Artificial Intelligence",
+          "costar": "Brendan Gleeson"
+        },
+        {
+          "film": "The Banshees of Inisherin",
+          "costar": "Barry Keoghan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-26",
+      "startingActor": "Jennifer Lawrence",
+      "endingActor": "Ethan Hawke",
+      "idealPath": [
+        {
+          "film": "American Hustle",
+          "costar": "Adrian Martinez"
+        },
+        {
+          "film": "Before the Devil Knows You're Dead",
+          "costar": "Ethan Hawke"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-27",
+      "startingActor": "Shah Rukh Khan",
+      "endingActor": "Michael B. Jordan",
+      "idealPath": [
+        {
+          "film": "Ae Dil Hai Mushkil",
+          "costar": "Aishwarya Rai Bachchan"
+        },
+        {
+          "film": "The Last Legion",
+          "costar": "Kevin McKidd"
+        },
+        {
+          "film": "Justice League: The Flashpoint Paradox",
+          "costar": "Michael B. Jordan"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-28",
+      "startingActor": "Ryan Gosling",
+      "endingActor": "Florence Pugh",
+      "idealPath": [
+        {
+          "film": "All Good Things",
+          "costar": "Tom Kemp"
+        },
+        {
+          "film": "Little Women",
+          "costar": "Florence Pugh"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-29",
+      "startingActor": "Meryl Streep",
+      "endingActor": "Alia Bhatt",
+      "idealPath": [
+        {
+          "film": "Don't Look Up",
+          "costar": "Ishaan Khatter"
+        },
+        {
+          "film": "Udta Punjab",
+          "costar": "Alia Bhatt"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-11-30",
+      "startingActor": "Viola Davis",
+      "endingActor": "Michelle Yeoh",
+      "idealPath": [
+        {
+          "film": "Beautiful Creatures",
+          "costar": "Emma Thompson"
+        },
+        {
+          "film": "Last Christmas",
+          "costar": "Michelle Yeoh"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "startingActor": "Reese Witherspoon",
+      "endingActor": "Johnny Depp",
+      "idealPath": [
+        {
+          "film": "A Wrinkle in Time",
+          "costar": "Chris Pine"
+        },
+        {
+          "film": "Into the Woods",
+          "costar": "Johnny Depp"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-02",
+      "startingActor": "Ryan Gosling",
+      "endingActor": "Jessica Chastain",
+      "idealPath": [
+        {
+          "film": "All Good Things",
+          "costar": "David Margulies"
+        },
+        {
+          "film": "A Most Violent Year",
+          "costar": "Jessica Chastain"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-03",
+      "startingActor": "Jessica Chastain",
+      "endingActor": "Paul Mescal",
+      "idealPath": [
+        {
+          "film": "Memory",
+          "costar": "Peter Sarsgaard"
+        },
+        {
+          "film": "The Lost Daughter",
+          "costar": "Paul Mescal"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-04",
+      "startingActor": "Tom Cruise",
+      "endingActor": "Oscar Isaac",
+      "idealPath": [
+        {
+          "film": "American Made",
+          "costar": "Domhnall Gleeson"
+        },
+        {
+          "film": "Ex Machina",
+          "costar": "Oscar Isaac"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-05",
+      "startingActor": "Margot Robbie",
+      "endingActor": "Sandra Bullock",
+      "idealPath": [
+        {
+          "film": "About Time",
+          "costar": "Lisa Eichhorn"
+        },
+        {
+          "film": "The Vanishing (1993)",
+          "costar": "Sandra Bullock"
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "date": "2026-12-06",
+      "startingActor": "Mahershala Ali",
+      "endingActor": "Matt Damon",
+      "idealPath": [
+        {
+          "film": "Alita: Battle Angel",
+          "costar": "Christoph Waltz"
+        },
+        {
+          "film": "Downsizing",
+          "costar": "Matt Damon"
+        }
+      ]
     }
   ]
 }
